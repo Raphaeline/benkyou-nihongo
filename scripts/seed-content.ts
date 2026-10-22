@@ -1,7 +1,7 @@
 // npm run seed:content — kirim semua materi valid ke Supabase lewat RPC seed_lesson.
 // Butuh NEXT_PUBLIC_SUPABASE_URL dan SUPABASE_SECRET_KEY (.env.local atau GitHub Environments).
-// PUBLISH=all (bawaan, untuk staging) mempublikasikan semua materi;
-// PUBLISH=reviewed (produksi) hanya materi berstatus reviewed.
+// --publish=all (bawaan, untuk staging) mempublikasikan semua materi;
+// --publish=reviewed (produksi) hanya materi berstatus reviewed.
 
 import { createHash } from "node:crypto";
 import { readdirSync, readFileSync } from "node:fs";
@@ -14,7 +14,7 @@ import { validateLesson } from "../src/lib/content/validate.ts";
 
 const URL_ = process.env.NEXT_PUBLIC_SUPABASE_URL;
 const KEY = process.env.SUPABASE_SECRET_KEY;
-const PUBLISH = process.env.PUBLISH ?? "all";
+const PUBLISH = process.argv.find((a) => a.startsWith("--publish="))?.split("=")[1] ?? "all";
 const DRY = process.argv.includes("--dry-run");
 if (!DRY && (!URL_ || !KEY)) {
   console.error("NEXT_PUBLIC_SUPABASE_URL dan SUPABASE_SECRET_KEY wajib diisi (lihat .env.example).");
