@@ -13,6 +13,11 @@ export default async function HomePage() {
           Latihan percakapan bahasa Jepang sehari-hari untuk level N5 sampai N4. Setiap dialog dilengkapi
           furigana, romaji, terjemahan, dan latihan.
         </p>
+        <p className="font-ui mt-4">
+          <Link href="/kana" className="border-2 border-ink bg-white px-3 py-1 hover:bg-tone-1">
+            Tabel hiragana dan katakana
+          </Link>
+        </p>
       </header>
 
       <section aria-labelledby="daftar-materi" className="mt-10">
