@@ -3,6 +3,8 @@ import type { ReactNode } from "react";
 type SpeechBubbleProps = {
   children: ReactNode;
   className?: string;
+  /** Ekor di kanan bawah (pembicara di sisi kanan). */
+  flip?: boolean;
 };
 
 // Elips dan ekor digambar dalam satu path supaya garis tepinya menyambung.
@@ -10,14 +12,14 @@ type SpeechBubbleProps = {
 const BUBBLE_PATH =
   "M 41.67 53.6 A 48 26 0 1 0 26 50.5 L 16 59.5 L 41.67 53.6 Z";
 
-export function SpeechBubble({ children, className = "" }: SpeechBubbleProps) {
+export function SpeechBubble({ children, className = "", flip = false }: SpeechBubbleProps) {
   return (
     <div
       className={`relative flex items-center justify-center px-[14%] pt-[10%] pb-[12%] text-center ${className}`}
     >
       <svg
         aria-hidden="true"
-        className="absolute inset-0 h-full w-full overflow-visible"
+        className={`absolute inset-0 h-full w-full overflow-visible ${flip ? "-scale-x-100" : ""}`}
         viewBox="0 0 100 60"
         preserveAspectRatio="none"
       >
