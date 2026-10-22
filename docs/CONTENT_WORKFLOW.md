@@ -1,5 +1,8 @@
 # Alur Kerja Konten
 
+> **Diperbarui 22 Okt 2026 (PRD D12, §9.4):** staging hanya untuk fitur. Konten di-push langsung ke `main` tanpa PR, dan status review (`ai-draft`/`reviewed`) dihapus: semua materi di `main` terbit. Workflow `deploy-production` menjalankan validasi → migrasi → seed → redeploy Vercel. Bagian di bawah yang menyebut PR konten ke `staging`, status review, atau gerbang review digantikan oleh PRD §9.4.
+
+
 | | |
 |---|---|
 | Status | Draf M0. Hampir seluruh isi dokumen ini adalah rencana yang dibangun di M1–M6. |

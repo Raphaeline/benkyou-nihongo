@@ -1,0 +1,64 @@
+name: deploy-production
+
+# Konten di main = konten produksi. Konten boleh di-push langsung ke main,
+# jadi validasi berjalan di sini sebelum apa pun dikirim ke database:
+# validasi → migrasi → seed → redeploy Vercel. Jika validasi gagal, produksi tidak berubah.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "content/**"
+      - "supabase/migrations/**"
+      - "src/lib/content/**"
+      - "scripts/seed-content.ts"
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-production
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: production
+    env:
+      SUPABASE_ACCESS_TOKEN: ${{ secrets.SUPABASE_ACCESS_TOKEN }}
+      SUPABASE_DB_PASSWORD: ${{ secrets.SUPABASE_DB_PASSWORD }}
+      NEXT_PUBLIC_SUPABASE_URL: ${{ vars.SUPABASE_URL }}
+      SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+
+      - name: Validasi konten
+        run: |
+          npm test
+          npm run validate:content
+
+      - uses: supabase/setup-cli@v3
+
+      - name: Migrasi database produksi
+        run: |
+          supabase link --project-ref "${{ vars.SUPABASE_PROJECT_ID }}"
+          supabase db push --yes
+
+      - name: Seed konten
+        run: node scripts/seed-content.ts
+
+      - name: Redeploy Vercel
+        env:
+          HOOK: ${{ secrets.VERCEL_DEPLOY_HOOK_URL }}
+        run: |
+          if [ -z "$HOOK" ]; then
+            echo "::warning::VERCEL_DEPLOY_HOOK_URL belum diisi; redeploy Vercel manual agar konten baru tampil."
+          else
+            curl -fsS -X POST "$HOOK" > /dev/null && echo "Redeploy Vercel dipicu."
+          fi
