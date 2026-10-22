@@ -226,7 +226,7 @@ Konsekuensi untuk milestone berikutnya:
 
 ---
 
-## 4. Database (sudah ditulis di branch `feature/db-schema`, belum di-push ke Supabase)
+## 4. Database (diterapkan ke `benkyou-staging` pada 22 Okt 2026)
 
 Semua tabel dibuat lewat migrasi di `supabase/migrations`:
 
@@ -307,7 +307,7 @@ Sejak perubahan Data API Supabase, tabel tanpa GRANT tidak bisa diakses, dan BYP
 ### 4.6 Uji database
 
 - `npm run test:db` menjalankan semua migrasi di PGlite (Postgres di Node, tanpa Docker), dengan stub role `anon`, `authenticated`, `service_role` dan skema `auth`. Ada 15 cek: visibilitas materi draf, tulis oleh `anon`, isolasi progres antarpengguna, aturan merge, validasi skor dan ID, hapus akun, dan view Review.
-- Keterbatasannya: skema `auth` di PGlite hanya stub. Perilaku khusus Supabase (misalnya hak `delete` pada `auth.users`) baru terbukti setelah `supabase db push` ke project staging.
+- Keterbatasannya: skema `auth` di PGlite hanya stub. Perilaku khusus Supabase (misalnya hak `delete` pada `auth.users`) sudah diverifikasi langsung di project staging lewat API (13 cek: RLS konten, RPC, merge, hapus akun dengan pengguna uji sementara).
 - pgTAP (`supabase test db`) bisa ditambahkan di CI nanti, karena runner GitHub punya Docker.
 
 ---
