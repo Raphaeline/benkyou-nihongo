@@ -3,13 +3,17 @@
   "seq": 1,
   "slug": "perkenalan-diri",
   "level": "N5",
-  "review": {
-    "status": "ai-draft",
-    "reviewedAt": null,
-    "checklist": []
-  },
   "meta": {
-    "titleJa": [{ "t": "自己", "r": "じこ" }, { "t": "紹介", "r": "しょうかい" }],
+    "titleJa": [
+      {
+        "t": "自己",
+        "r": "じこ"
+      },
+      {
+        "t": "紹介",
+        "r": "しょうかい"
+      }
+    ],
     "titleInd": "Perkenalan Diri",
     "situationInd": "Hari pertama kelas Sabtu pagi di sebuah sekolah bahasa Jepang di Tokyo (kelas akhir pekan, sehingga murid yang bekerja juga bisa ikut). Guru dan tiga murid baru saling memperkenalkan diri.",
     "locationInd": "Sebuah sekolah bahasa Jepang di Tokyo",
@@ -24,7 +28,18 @@
   "characters": [
     {
       "id": "yamada",
-      "name": [{ "t": "山田", "r": "やまだ", "proper": true }, { "t": "先生", "r": "せんせい", "suffix": true }],
+      "name": [
+        {
+          "t": "山田",
+          "r": "やまだ",
+          "proper": true
+        },
+        {
+          "t": "先生",
+          "r": "せんせい",
+          "suffix": true
+        }
+      ],
       "relationInd": "Guru kelas Sabtu pagi bahasa Jepang. Baru pertama kali bertemu ketiga murid.",
       "register": {
         "default": "teineigo",
@@ -33,7 +48,12 @@
     },
     {
       "id": "rina",
-      "name": [{ "t": "リナ", "proper": true }],
+      "name": [
+        {
+          "t": "リナ",
+          "proper": true
+        }
+      ],
       "relationInd": "Murid dari Jakarta, Indonesia. Tinggal di Shinjuku. Di kelas ini ia tahu bahwa Maria tinggal di daerah yang sama.",
       "register": {
         "default": "teineigo",
@@ -42,7 +62,12 @@
     },
     {
       "id": "chen",
-      "name": [{ "t": "チェン", "proper": true }],
+      "name": [
+        {
+          "t": "チェン",
+          "proper": true
+        }
+      ],
       "relationInd": "Murid dari Taiwan. Karyawan sebuah perusahaan di Tokyo.",
       "register": {
         "default": "teineigo",
@@ -51,7 +76,12 @@
     },
     {
       "id": "maria",
-      "name": [{ "t": "マリア", "proper": true }],
+      "name": [
+        {
+          "t": "マリア",
+          "proper": true
+        }
+      ],
       "relationInd": "Murid dari Filipina. Tinggal di Shinjuku, sama dengan Rina.",
       "register": {
         "default": "teineigo",
@@ -60,7 +90,12 @@
     },
     {
       "id": "kim",
-      "name": [{ "t": "キム", "proper": true }],
+      "name": [
+        {
+          "t": "キム",
+          "proper": true
+        }
+      ],
       "relationInd": "Murid baru dari Korea Selatan (dialog variasi). Ingin duduk di sebelah Rina; mereka belum saling kenal.",
       "register": {
         "default": "teineigo",
@@ -75,36 +110,163 @@
         "sentences": [
           {
             "id": "L001.main.01.1",
-            "ja": [{ "t": "みなさん" }, { "t": "、" }, { "t": "おはよう" }, { "t": "ございます", "lemma": "ござる", "lemmaR": "ござる", "form": "masu", "aux": true }, { "t": "。" }],
+            "ja": [
+              {
+                "t": "みなさん"
+              },
+              {
+                "t": "、"
+              },
+              {
+                "t": "おはよう"
+              },
+              {
+                "t": "ございます",
+                "lemma": "ござる",
+                "lemmaR": "ござる",
+                "form": "masu",
+                "aux": true
+              },
+              {
+                "t": "。"
+              }
+            ],
             "translationInd": "Selamat pagi, semuanya."
           },
           {
             "id": "L001.main.01.2",
-            "ja": [{ "t": "はじめまして" }, { "t": "。" }],
+            "ja": [
+              {
+                "t": "はじめまして"
+              },
+              {
+                "t": "。"
+              }
+            ],
             "translationInd": "Perkenalkan.",
             "noteInd": "harfiahnya \"(ini) pertama kalinya (kita bertemu)\". Hanya diucapkan pada pertemuan pertama, biasanya di awal perkenalan."
           },
           {
             "id": "L001.main.01.3",
-            "ja": [{ "t": "わたし" }, { "t": "は", "prt": true }, { "t": "山田", "r": "やまだ", "proper": true }, { "t": "です" }, { "t": "。" }],
+            "ja": [
+              {
+                "t": "わたし"
+              },
+              {
+                "t": "は",
+                "prt": true
+              },
+              {
+                "t": "山田",
+                "r": "やまだ",
+                "proper": true
+              },
+              {
+                "t": "です"
+              },
+              {
+                "t": "。"
+              }
+            ],
             "translationInd": "Saya Yamada.",
             "noteInd": "penutur asli sering tidak mengucapkan わたしは saat memperkenalkan diri (bandingkan 2.2). Guru mengucapkannya di sini supaya jelas bagi murid pemula. Guru memperkenalkan diri dengan nama keluarga."
           },
           {
             "id": "L001.main.01.4",
-            "ja": [{ "t": "どうぞ" }, { "t": "よろしく" }, { "t": "お願い", "r": "おねがい" }, { "t": "します", "lemma": "する", "lemmaR": "する", "form": "masu", "aux": true }, { "t": "。" }],
+            "ja": [
+              {
+                "t": "どうぞ"
+              },
+              {
+                "t": "よろしく"
+              },
+              {
+                "t": "お願い",
+                "r": "おねがい"
+              },
+              {
+                "t": "します",
+                "lemma": "する",
+                "lemmaR": "する",
+                "form": "masu",
+                "aux": true
+              },
+              {
+                "t": "。"
+              }
+            ],
             "translationInd": "Salam kenal.",
             "noteInd": "harfiahnya kira-kira \"silakan, mohon perlakukan (saya) dengan baik\". Ungkapan ini tidak punya padanan persis dalam bahasa Indonesia. Saat pertama bertemu, padanannya \"salam kenal\". Dari murid kepada guru, nuansanya juga \"mohon bimbingannya\". どうぞ membuatnya sedikit lebih sopan."
           },
           {
             "id": "L001.main.01.5",
-            "ja": [{ "t": "じゃあ" }, { "t": "、" }, { "t": "みなさん" }, { "t": "も", "prt": true }, { "t": "自己", "r": "じこ" }, { "t": "紹介", "r": "しょうかい" }, { "t": "を", "prt": true }, { "t": "して", "lemma": "する", "lemmaR": "する", "form": "te" }, { "t": "ください", "lemma": "くださる", "lemmaR": "くださる", "form": "request", "aux": true }, { "t": "。" }],
+            "ja": [
+              {
+                "t": "じゃあ"
+              },
+              {
+                "t": "、"
+              },
+              {
+                "t": "みなさん"
+              },
+              {
+                "t": "も",
+                "prt": true
+              },
+              {
+                "t": "自己",
+                "r": "じこ"
+              },
+              {
+                "t": "紹介",
+                "r": "しょうかい"
+              },
+              {
+                "t": "を",
+                "prt": true
+              },
+              {
+                "t": "して",
+                "lemma": "する",
+                "lemmaR": "する",
+                "form": "te"
+              },
+              {
+                "t": "ください",
+                "lemma": "くださる",
+                "lemmaR": "くださる",
+                "form": "request",
+                "aux": true
+              },
+              {
+                "t": "。"
+              }
+            ],
             "translationInd": "Baik, sekarang silakan kalian semua juga memperkenalkan diri.",
             "noteInd": "じゃあ berarti \"baik\" atau \"nah\", dipakai untuk pindah ke kegiatan berikutnya. Bentuk yang lebih formal adalah では. も (\"juga\") dipakai karena guru sudah memperkenalkan diri lebih dulu."
           },
           {
             "id": "L001.main.01.6",
-            "ja": [{ "t": "リナ", "proper": true }, { "t": "さん", "suffix": true }, { "t": "、" }, { "t": "どうぞ" }, { "t": "。" }],
+            "ja": [
+              {
+                "t": "リナ",
+                "proper": true
+              },
+              {
+                "t": "さん",
+                "suffix": true
+              },
+              {
+                "t": "、"
+              },
+              {
+                "t": "どうぞ"
+              },
+              {
+                "t": "。"
+              }
+            ],
             "translationInd": "Rina, silakan."
           }
         ]
@@ -114,30 +276,128 @@
         "sentences": [
           {
             "id": "L001.main.02.1",
-            "ja": [{ "t": "はい" }, { "t": "。" }, { "t": "はじめまして" }, { "t": "。" }],
+            "ja": [
+              {
+                "t": "はい"
+              },
+              {
+                "t": "。"
+              },
+              {
+                "t": "はじめまして"
+              },
+              {
+                "t": "。"
+              }
+            ],
             "translationInd": "Baik. Perkenalkan."
           },
           {
             "id": "L001.main.02.2",
-            "ja": [{ "t": "リナ", "proper": true }, { "t": "です" }, { "t": "。" }],
+            "ja": [
+              {
+                "t": "リナ",
+                "proper": true
+              },
+              {
+                "t": "です"
+              },
+              {
+                "t": "。"
+              }
+            ],
             "translationInd": "Saya Rina.",
             "noteInd": "bentuk lengkapnya わたしはリナです. Dalam perkenalan, わたしは biasanya tidak diucapkan karena sudah jelas siapa yang berbicara."
           },
           {
             "id": "L001.main.02.3",
-            "ja": [{ "t": "インドネシア", "proper": true }, { "t": "から", "prt": true }, { "t": "来ました", "r": "きました", "lemma": "来る", "lemmaR": "くる", "form": "mashita" }, { "t": "。" }],
+            "ja": [
+              {
+                "t": "インドネシア",
+                "proper": true
+              },
+              {
+                "t": "から",
+                "prt": true
+              },
+              {
+                "t": "来ました",
+                "r": "きました",
+                "lemma": "来る",
+                "lemmaR": "くる",
+                "form": "mashita"
+              },
+              {
+                "t": "。"
+              }
+            ],
             "translationInd": "Saya dari Indonesia.",
             "noteInd": "harfiahnya \"(saya) datang dari Indonesia\". 来ました adalah bentuk lampau karena kedatangannya sudah terjadi. Dalam perkenalan, maknanya \"berasal dari\", bukan \"tadi datang\"."
           },
           {
             "id": "L001.main.02.4",
-            "ja": [{ "t": "今", "r": "いま" }, { "t": "、" }, { "t": "新宿", "r": "しんじゅく", "proper": true }, { "t": "に", "prt": true }, { "t": "住んで", "r": "すんで", "lemma": "住む", "lemmaR": "すむ", "form": "te" }, { "t": "います", "lemma": "いる", "lemmaR": "いる", "form": "masu", "aux": true }, { "t": "。" }],
+            "ja": [
+              {
+                "t": "今",
+                "r": "いま"
+              },
+              {
+                "t": "、"
+              },
+              {
+                "t": "新宿",
+                "r": "しんじゅく",
+                "proper": true
+              },
+              {
+                "t": "に",
+                "prt": true
+              },
+              {
+                "t": "住んで",
+                "r": "すんで",
+                "lemma": "住む",
+                "lemmaR": "すむ",
+                "form": "te"
+              },
+              {
+                "t": "います",
+                "lemma": "いる",
+                "lemmaR": "いる",
+                "form": "masu",
+                "aux": true
+              },
+              {
+                "t": "。"
+              }
+            ],
             "translationInd": "Sekarang saya tinggal di Shinjuku.",
             "noteInd": "〜ています di sini menyatakan keadaan, yaitu tinggal di suatu tempat. Artinya bukan \"sedang melakukan sesuatu\"."
           },
           {
             "id": "L001.main.02.5",
-            "ja": [{ "t": "どうぞ" }, { "t": "よろしく" }, { "t": "お願い", "r": "おねがい" }, { "t": "します", "lemma": "する", "lemmaR": "する", "form": "masu", "aux": true }, { "t": "。" }],
+            "ja": [
+              {
+                "t": "どうぞ"
+              },
+              {
+                "t": "よろしく"
+              },
+              {
+                "t": "お願い",
+                "r": "おねがい"
+              },
+              {
+                "t": "します",
+                "lemma": "する",
+                "lemmaR": "する",
+                "form": "masu",
+                "aux": true
+              },
+              {
+                "t": "。"
+              }
+            ],
             "translationInd": "Salam kenal."
           }
         ]
@@ -147,13 +407,82 @@
         "sentences": [
           {
             "id": "L001.main.03.1",
-            "ja": [{ "t": "はい" }, { "t": "、" }, { "t": "よろしく" }, { "t": "お願い", "r": "おねがい" }, { "t": "します", "lemma": "する", "lemmaR": "する", "form": "masu", "aux": true }, { "t": "。" }],
+            "ja": [
+              {
+                "t": "はい"
+              },
+              {
+                "t": "、"
+              },
+              {
+                "t": "よろしく"
+              },
+              {
+                "t": "お願い",
+                "r": "おねがい"
+              },
+              {
+                "t": "します",
+                "lemma": "する",
+                "lemmaR": "する",
+                "form": "masu",
+                "aux": true
+              },
+              {
+                "t": "。"
+              }
+            ],
             "translationInd": "Ya, salam kenal.",
             "noteInd": "tanpa どうぞ, ungkapan ini sedikit lebih ringan, tetapi tetap sopan. Guru biasa membalas murid dengan bentuk ini."
           },
           {
             "id": "L001.main.03.2",
-            "ja": [{ "t": "リナ", "proper": true }, { "t": "さん", "suffix": true }, { "t": "は", "prt": true }, { "t": "、" }, { "t": "インドネシア", "proper": true }, { "t": "の", "prt": true }, { "t": "どこ" }, { "t": "から", "prt": true }, { "t": "来ました", "r": "きました", "lemma": "来る", "lemmaR": "くる", "form": "mashita" }, { "t": "か", "prt": true }, { "t": "？" }],
+            "ja": [
+              {
+                "t": "リナ",
+                "proper": true
+              },
+              {
+                "t": "さん",
+                "suffix": true
+              },
+              {
+                "t": "は",
+                "prt": true
+              },
+              {
+                "t": "、"
+              },
+              {
+                "t": "インドネシア",
+                "proper": true
+              },
+              {
+                "t": "の",
+                "prt": true
+              },
+              {
+                "t": "どこ"
+              },
+              {
+                "t": "から",
+                "prt": true
+              },
+              {
+                "t": "来ました",
+                "r": "きました",
+                "lemma": "来る",
+                "lemmaR": "くる",
+                "form": "mashita"
+              },
+              {
+                "t": "か",
+                "prt": true
+              },
+              {
+                "t": "？"
+              }
+            ],
             "translationInd": "Rina berasal dari daerah mana di Indonesia?",
             "noteInd": "bahasa Jepang memakai nama + さん untuk menyapa lawan bicara. あなた (\"Anda\") jarang dipakai karena bisa terdengar berjarak. Harfiahnya \"Rina, (Anda) datang dari mana di Indonesia?\""
           }
@@ -164,7 +493,18 @@
         "sentences": [
           {
             "id": "L001.main.04.1",
-            "ja": [{ "t": "ジャカルタ", "proper": true }, { "t": "です" }, { "t": "。" }],
+            "ja": [
+              {
+                "t": "ジャカルタ",
+                "proper": true
+              },
+              {
+                "t": "です"
+              },
+              {
+                "t": "。"
+              }
+            ],
             "translationInd": "Dari Jakarta.",
             "noteInd": "harfiahnya \"(itu) Jakarta\". Jawaban singkat seperti ini yang alami. ジャカルタです dipakai sebagai pengganti kalimat lengkap ジャカルタから来ました; です menggantikan bagian から来ました."
           }
@@ -175,19 +515,88 @@
         "sentences": [
           {
             "id": "L001.main.05.1",
-            "ja": [{ "t": "ジャカルタ", "proper": true }, { "t": "です" }, { "t": "か", "prt": true }, { "t": "。" }],
+            "ja": [
+              {
+                "t": "ジャカルタ",
+                "proper": true
+              },
+              {
+                "t": "です"
+              },
+              {
+                "t": "か",
+                "prt": true
+              },
+              {
+                "t": "。"
+              }
+            ],
             "translationInd": "Oh, Jakarta.",
             "noteInd": "diucapkan dengan intonasi turun sebagai tanggapan, bukan pertanyaan. Karena itu ditulis dengan 。, bukan ？."
           },
           {
             "id": "L001.main.05.2",
-            "ja": [{ "t": "ありがとう" }, { "t": "ございました", "lemma": "ござる", "lemmaR": "ござる", "form": "mashita", "aux": true }, { "t": "。" }],
+            "ja": [
+              {
+                "t": "ありがとう"
+              },
+              {
+                "t": "ございました",
+                "lemma": "ござる",
+                "lemmaR": "ござる",
+                "form": "mashita",
+                "aux": true
+              },
+              {
+                "t": "。"
+              }
+            ],
             "translationInd": "Terima kasih.",
             "noteInd": "ございました dipakai sebagai penutup karena perkenalan Rina sudah selesai. ありがとうございます adalah ucapan terima kasih umum, juga dipakai tepat setelah menerima bantuan bila situasinya masih berlanjut."
           },
           {
             "id": "L001.main.05.3",
-            "ja": [{ "t": "じゃあ" }, { "t": "、" }, { "t": "次", "r": "つぎ" }, { "t": "は", "prt": true }, { "t": "チェン", "proper": true }, { "t": "さん", "suffix": true }, { "t": "、" }, { "t": "お願い", "r": "おねがい" }, { "t": "します", "lemma": "する", "lemmaR": "する", "form": "masu", "aux": true }, { "t": "。" }],
+            "ja": [
+              {
+                "t": "じゃあ"
+              },
+              {
+                "t": "、"
+              },
+              {
+                "t": "次",
+                "r": "つぎ"
+              },
+              {
+                "t": "は",
+                "prt": true
+              },
+              {
+                "t": "チェン",
+                "proper": true
+              },
+              {
+                "t": "さん",
+                "suffix": true
+              },
+              {
+                "t": "、"
+              },
+              {
+                "t": "お願い",
+                "r": "おねがい"
+              },
+              {
+                "t": "します",
+                "lemma": "する",
+                "lemmaR": "する",
+                "form": "masu",
+                "aux": true
+              },
+              {
+                "t": "。"
+              }
+            ],
             "translationInd": "Baik, berikutnya Chen, silakan.",
             "noteInd": "お願いします di sini berarti \"tolong (mulai)\" atau \"silakan\", bukan \"salam kenal\"."
           }
@@ -198,22 +607,81 @@
         "sentences": [
           {
             "id": "L001.main.06.1",
-            "ja": [{ "t": "はじめまして" }, { "t": "。" }],
+            "ja": [
+              {
+                "t": "はじめまして"
+              },
+              {
+                "t": "。"
+              }
+            ],
             "translationInd": "Perkenalkan."
           },
           {
             "id": "L001.main.06.2",
-            "ja": [{ "t": "チェン", "proper": true }, { "t": "です" }, { "t": "。" }],
+            "ja": [
+              {
+                "t": "チェン",
+                "proper": true
+              },
+              {
+                "t": "です"
+              },
+              {
+                "t": "。"
+              }
+            ],
             "translationInd": "Saya Chen."
           },
           {
             "id": "L001.main.06.3",
-            "ja": [{ "t": "台湾", "r": "たいわん", "proper": true }, { "t": "から", "prt": true }, { "t": "来ました", "r": "きました", "lemma": "来る", "lemmaR": "くる", "form": "mashita" }, { "t": "。" }],
+            "ja": [
+              {
+                "t": "台湾",
+                "r": "たいわん",
+                "proper": true
+              },
+              {
+                "t": "から",
+                "prt": true
+              },
+              {
+                "t": "来ました",
+                "r": "きました",
+                "lemma": "来る",
+                "lemmaR": "くる",
+                "form": "mashita"
+              },
+              {
+                "t": "。"
+              }
+            ],
             "translationInd": "Saya dari Taiwan."
           },
           {
             "id": "L001.main.06.4",
-            "ja": [{ "t": "どうぞ" }, { "t": "よろしく" }, { "t": "お願い", "r": "おねがい" }, { "t": "します", "lemma": "する", "lemmaR": "する", "form": "masu", "aux": true }, { "t": "。" }],
+            "ja": [
+              {
+                "t": "どうぞ"
+              },
+              {
+                "t": "よろしく"
+              },
+              {
+                "t": "お願い",
+                "r": "おねがい"
+              },
+              {
+                "t": "します",
+                "lemma": "する",
+                "lemmaR": "する",
+                "form": "masu",
+                "aux": true
+              },
+              {
+                "t": "。"
+              }
+            ],
             "translationInd": "Salam kenal."
           }
         ]
@@ -223,12 +691,63 @@
         "sentences": [
           {
             "id": "L001.main.07.1",
-            "ja": [{ "t": "はい" }, { "t": "、" }, { "t": "よろしく" }, { "t": "お願い", "r": "おねがい" }, { "t": "します", "lemma": "する", "lemmaR": "する", "form": "masu", "aux": true }, { "t": "。" }],
+            "ja": [
+              {
+                "t": "はい"
+              },
+              {
+                "t": "、"
+              },
+              {
+                "t": "よろしく"
+              },
+              {
+                "t": "お願い",
+                "r": "おねがい"
+              },
+              {
+                "t": "します",
+                "lemma": "する",
+                "lemmaR": "する",
+                "form": "masu",
+                "aux": true
+              },
+              {
+                "t": "。"
+              }
+            ],
             "translationInd": "Ya, salam kenal."
           },
           {
             "id": "L001.main.07.2",
-            "ja": [{ "t": "チェン", "proper": true }, { "t": "さん", "suffix": true }, { "t": "は", "prt": true }, { "t": "大学生", "r": "だいがくせい" }, { "t": "です" }, { "t": "か", "prt": true }, { "t": "？" }],
+            "ja": [
+              {
+                "t": "チェン",
+                "proper": true
+              },
+              {
+                "t": "さん",
+                "suffix": true
+              },
+              {
+                "t": "は",
+                "prt": true
+              },
+              {
+                "t": "大学生",
+                "r": "だいがくせい"
+              },
+              {
+                "t": "です"
+              },
+              {
+                "t": "か",
+                "prt": true
+              },
+              {
+                "t": "？"
+              }
+            ],
             "translationInd": "Apakah Chen mahasiswa?"
           }
         ]
@@ -238,13 +757,72 @@
         "sentences": [
           {
             "id": "L001.main.08.1",
-            "ja": [{ "t": "いいえ" }, { "t": "、" }, { "t": "会社員", "r": "かいしゃいん" }, { "t": "です" }, { "t": "。" }],
+            "ja": [
+              {
+                "t": "いいえ"
+              },
+              {
+                "t": "、"
+              },
+              {
+                "t": "会社員",
+                "r": "かいしゃいん"
+              },
+              {
+                "t": "です"
+              },
+              {
+                "t": "。"
+              }
+            ],
             "translationInd": "Bukan, saya karyawan perusahaan.",
             "noteInd": "cukup いいえ, lalu jawaban yang benar. Bentuk negatif \"bukan mahasiswa\" tidak perlu diucapkan, dan subjek \"saya\" juga tidak disebut."
           },
           {
             "id": "L001.main.08.2",
-            "ja": [{ "t": "今", "r": "いま" }, { "t": "、" }, { "t": "東京", "r": "とうきょう", "proper": true }, { "t": "の", "prt": true }, { "t": "会社", "r": "かいしゃ" }, { "t": "で", "prt": true }, { "t": "働いて", "r": "はたらいて", "lemma": "働く", "lemmaR": "はたらく", "form": "te" }, { "t": "います", "lemma": "いる", "lemmaR": "いる", "form": "masu", "aux": true }, { "t": "。" }],
+            "ja": [
+              {
+                "t": "今",
+                "r": "いま"
+              },
+              {
+                "t": "、"
+              },
+              {
+                "t": "東京",
+                "r": "とうきょう",
+                "proper": true
+              },
+              {
+                "t": "の",
+                "prt": true
+              },
+              {
+                "t": "会社",
+                "r": "かいしゃ"
+              },
+              {
+                "t": "で",
+                "prt": true
+              },
+              {
+                "t": "働いて",
+                "r": "はたらいて",
+                "lemma": "働く",
+                "lemmaR": "はたらく",
+                "form": "te"
+              },
+              {
+                "t": "います",
+                "lemma": "いる",
+                "lemmaR": "いる",
+                "form": "masu",
+                "aux": true
+              },
+              {
+                "t": "。"
+              }
+            ],
             "translationInd": "Sekarang saya bekerja di sebuah perusahaan di Tokyo.",
             "noteInd": "働いています menyatakan pekerjaan saat ini, bukan kegiatan yang sedang dilakukan detik ini. 東京の会社 harfiahnya \"perusahaan Tokyo\". で menandai tempat kegiatan."
           }
@@ -255,13 +833,51 @@
         "sentences": [
           {
             "id": "L001.main.09.1",
-            "ja": [{ "t": "そう" }, { "t": "です" }, { "t": "か", "prt": true }, { "t": "。" }],
+            "ja": [
+              {
+                "t": "そう"
+              },
+              {
+                "t": "です"
+              },
+              {
+                "t": "か",
+                "prt": true
+              },
+              {
+                "t": "。"
+              }
+            ],
             "translationInd": "Oh, begitu.",
             "noteInd": "dengan intonasi turun, そうですか adalah tanggapan \"oh, begitu\", bukan pertanyaan. Ungkapan ini sangat sering dipakai."
           },
           {
             "id": "L001.main.09.2",
-            "ja": [{ "t": "じゃあ" }, { "t": "、" }, { "t": "マリア", "proper": true }, { "t": "さん", "suffix": true }, { "t": "、" }, { "t": "どうぞ" }, { "t": "。" }],
+            "ja": [
+              {
+                "t": "じゃあ"
+              },
+              {
+                "t": "、"
+              },
+              {
+                "t": "マリア",
+                "proper": true
+              },
+              {
+                "t": "さん",
+                "suffix": true
+              },
+              {
+                "t": "、"
+              },
+              {
+                "t": "どうぞ"
+              },
+              {
+                "t": "。"
+              }
+            ],
             "translationInd": "Baik, Maria, silakan."
           }
         ]
@@ -271,28 +887,120 @@
         "sentences": [
           {
             "id": "L001.main.10.1",
-            "ja": [{ "t": "はじめまして" }, { "t": "。" }],
+            "ja": [
+              {
+                "t": "はじめまして"
+              },
+              {
+                "t": "。"
+              }
+            ],
             "translationInd": "Perkenalkan."
           },
           {
             "id": "L001.main.10.2",
-            "ja": [{ "t": "マリア", "proper": true }, { "t": "です" }, { "t": "。" }],
+            "ja": [
+              {
+                "t": "マリア",
+                "proper": true
+              },
+              {
+                "t": "です"
+              },
+              {
+                "t": "。"
+              }
+            ],
             "translationInd": "Saya Maria."
           },
           {
             "id": "L001.main.10.3",
-            "ja": [{ "t": "フィリピン", "proper": true }, { "t": "から", "prt": true }, { "t": "来ました", "r": "きました", "lemma": "来る", "lemmaR": "くる", "form": "mashita" }, { "t": "。" }],
+            "ja": [
+              {
+                "t": "フィリピン",
+                "proper": true
+              },
+              {
+                "t": "から",
+                "prt": true
+              },
+              {
+                "t": "来ました",
+                "r": "きました",
+                "lemma": "来る",
+                "lemmaR": "くる",
+                "form": "mashita"
+              },
+              {
+                "t": "。"
+              }
+            ],
             "translationInd": "Saya dari Filipina."
           },
           {
             "id": "L001.main.10.4",
-            "ja": [{ "t": "わたし" }, { "t": "も", "prt": true }, { "t": "新宿", "r": "しんじゅく", "proper": true }, { "t": "に", "prt": true }, { "t": "住んで", "r": "すんで", "lemma": "住む", "lemmaR": "すむ", "form": "te" }, { "t": "います", "lemma": "いる", "lemmaR": "いる", "form": "masu", "aux": true }, { "t": "。" }],
+            "ja": [
+              {
+                "t": "わたし"
+              },
+              {
+                "t": "も",
+                "prt": true
+              },
+              {
+                "t": "新宿",
+                "r": "しんじゅく",
+                "proper": true
+              },
+              {
+                "t": "に",
+                "prt": true
+              },
+              {
+                "t": "住んで",
+                "r": "すんで",
+                "lemma": "住む",
+                "lemmaR": "すむ",
+                "form": "te"
+              },
+              {
+                "t": "います",
+                "lemma": "いる",
+                "lemmaR": "いる",
+                "form": "masu",
+                "aux": true
+              },
+              {
+                "t": "。"
+              }
+            ],
             "translationInd": "Saya juga tinggal di Shinjuku.",
             "noteInd": "も menggantikan は dan berarti \"juga\". Maria mengaitkan kalimatnya dengan ucapan Rina di 2.4."
           },
           {
             "id": "L001.main.10.5",
-            "ja": [{ "t": "どうぞ" }, { "t": "よろしく" }, { "t": "お願い", "r": "おねがい" }, { "t": "します", "lemma": "する", "lemmaR": "する", "form": "masu", "aux": true }, { "t": "。" }],
+            "ja": [
+              {
+                "t": "どうぞ"
+              },
+              {
+                "t": "よろしく"
+              },
+              {
+                "t": "お願い",
+                "r": "おねがい"
+              },
+              {
+                "t": "します",
+                "lemma": "する",
+                "lemmaR": "する",
+                "form": "masu",
+                "aux": true
+              },
+              {
+                "t": "。"
+              }
+            ],
             "translationInd": "Salam kenal."
           }
         ]
@@ -302,7 +1010,41 @@
         "sentences": [
           {
             "id": "L001.main.11.1",
-            "ja": [{ "t": "あ" }, { "t": "、" }, { "t": "マリア", "proper": true }, { "t": "さん", "suffix": true }, { "t": "も", "prt": true }, { "t": "新宿", "r": "しんじゅく", "proper": true }, { "t": "です" }, { "t": "か", "prt": true }, { "t": "？" }],
+            "ja": [
+              {
+                "t": "あ"
+              },
+              {
+                "t": "、"
+              },
+              {
+                "t": "マリア",
+                "proper": true
+              },
+              {
+                "t": "さん",
+                "suffix": true
+              },
+              {
+                "t": "も",
+                "prt": true
+              },
+              {
+                "t": "新宿",
+                "r": "しんじゅく",
+                "proper": true
+              },
+              {
+                "t": "です"
+              },
+              {
+                "t": "か",
+                "prt": true
+              },
+              {
+                "t": "？"
+              }
+            ],
             "translationInd": "Oh, Maria juga di Shinjuku?",
             "noteInd": "住んでいます tidak diulang. Dalam percakapan, \"[tempat]です\" sudah cukup untuk berarti \"tinggal di [tempat]\" karena konteksnya jelas. Diucapkan dengan intonasi naik, sebagai ungkapan kaget sekaligus memastikan."
           }
@@ -313,12 +1055,57 @@
         "sentences": [
           {
             "id": "L001.main.12.1",
-            "ja": [{ "t": "はい" }, { "t": "、" }, { "t": "そう" }, { "t": "です" }, { "t": "。" }],
+            "ja": [
+              {
+                "t": "はい"
+              },
+              {
+                "t": "、"
+              },
+              {
+                "t": "そう"
+              },
+              {
+                "t": "です"
+              },
+              {
+                "t": "。"
+              }
+            ],
             "translationInd": "Iya, betul."
           },
           {
             "id": "L001.main.12.2",
-            "ja": [{ "t": "リナ", "proper": true }, { "t": "さん", "suffix": true }, { "t": "、" }, { "t": "よろしく" }, { "t": "お願い", "r": "おねがい" }, { "t": "します", "lemma": "する", "lemmaR": "する", "form": "masu", "aux": true }, { "t": "。" }],
+            "ja": [
+              {
+                "t": "リナ",
+                "proper": true
+              },
+              {
+                "t": "さん",
+                "suffix": true
+              },
+              {
+                "t": "、"
+              },
+              {
+                "t": "よろしく"
+              },
+              {
+                "t": "お願い",
+                "r": "おねがい"
+              },
+              {
+                "t": "します",
+                "lemma": "する",
+                "lemmaR": "する",
+                "form": "masu",
+                "aux": true
+              },
+              {
+                "t": "。"
+              }
+            ],
             "translationInd": "Salam kenal, Rina.",
             "noteInd": "kali ini ucapannya ditujukan khusus kepada Rina. Nuansanya kira-kira \"semoga kita bisa akrab\"."
           }
@@ -329,7 +1116,35 @@
         "sentences": [
           {
             "id": "L001.main.13.1",
-            "ja": [{ "t": "こちら" }, { "t": "こそ", "prt": true }, { "t": "、" }, { "t": "よろしく" }, { "t": "お願い", "r": "おねがい" }, { "t": "します", "lemma": "する", "lemmaR": "する", "form": "masu", "aux": true }, { "t": "。" }],
+            "ja": [
+              {
+                "t": "こちら"
+              },
+              {
+                "t": "こそ",
+                "prt": true
+              },
+              {
+                "t": "、"
+              },
+              {
+                "t": "よろしく"
+              },
+              {
+                "t": "お願い",
+                "r": "おねがい"
+              },
+              {
+                "t": "します",
+                "lemma": "する",
+                "lemmaR": "する",
+                "form": "masu",
+                "aux": true
+              },
+              {
+                "t": "。"
+              }
+            ],
             "translationInd": "Salam kenal juga.",
             "noteInd": "こちらこそ harfiahnya \"justru pihak sini (yang seharusnya berkata begitu)\". Ungkapan ini dipakai untuk membalas よろしくお願いします atau ucapan terima kasih, dengan makna \"saya juga\" atau \"justru saya yang …\"."
           }
@@ -340,12 +1155,74 @@
         "sentences": [
           {
             "id": "L001.main.14.1",
-            "ja": [{ "t": "みなさん" }, { "t": "、" }, { "t": "ありがとう" }, { "t": "ございました", "lemma": "ござる", "lemmaR": "ござる", "form": "mashita", "aux": true }, { "t": "。" }],
+            "ja": [
+              {
+                "t": "みなさん"
+              },
+              {
+                "t": "、"
+              },
+              {
+                "t": "ありがとう"
+              },
+              {
+                "t": "ございました",
+                "lemma": "ござる",
+                "lemmaR": "ござる",
+                "form": "mashita",
+                "aux": true
+              },
+              {
+                "t": "。"
+              }
+            ],
             "translationInd": "Terima kasih, semuanya."
           },
           {
             "id": "L001.main.14.2",
-            "ja": [{ "t": "じゃあ" }, { "t": "、" }, { "t": "今日", "r": "きょう" }, { "t": "から", "prt": true }, { "t": "一緒", "r": "いっしょ" }, { "t": "に", "prt": true }, { "t": "日本語", "r": "にほんご", "proper": true }, { "t": "を", "prt": true }, { "t": "勉強しましょう", "r": "べんきょうしましょう", "lemma": "勉強する", "lemmaR": "べんきょうする", "form": "mashou" }, { "t": "。" }],
+            "ja": [
+              {
+                "t": "じゃあ"
+              },
+              {
+                "t": "、"
+              },
+              {
+                "t": "今日",
+                "r": "きょう"
+              },
+              {
+                "t": "から",
+                "prt": true
+              },
+              {
+                "t": "一緒",
+                "r": "いっしょ"
+              },
+              {
+                "t": "に",
+                "prt": true
+              },
+              {
+                "t": "日本語",
+                "r": "にほんご",
+                "proper": true
+              },
+              {
+                "t": "を",
+                "prt": true
+              },
+              {
+                "t": "勉強しましょう",
+                "r": "べんきょうしましょう",
+                "lemma": "勉強する",
+                "lemmaR": "べんきょうする",
+                "form": "mashou"
+              },
+              {
+                "t": "。"
+              }
+            ],
             "translationInd": "Baik, mulai hari ini mari kita belajar bahasa Jepang bersama-sama.",
             "noteInd": "から di sini menandai titik mulai waktu (\"mulai hari ini\"). Maknanya berbeda dari から asal tempat pada 来ました. 一緒に lazim ditulis dengan kanji, tetapi banyak buku N5 menulisnya いっしょに."
           }
@@ -358,7 +1235,33 @@
         "sentences": [
           {
             "id": "L001.variation.01.1",
-            "ja": [{ "t": "すみません" }, { "t": "、" }, { "t": "ここ" }, { "t": "、" }, { "t": "いい" }, { "t": "です" }, { "t": "か", "prt": true }, { "t": "？" }],
+            "ja": [
+              {
+                "t": "すみません"
+              },
+              {
+                "t": "、"
+              },
+              {
+                "t": "ここ"
+              },
+              {
+                "t": "、"
+              },
+              {
+                "t": "いい"
+              },
+              {
+                "t": "です"
+              },
+              {
+                "t": "か",
+                "prt": true
+              },
+              {
+                "t": "？"
+              }
+            ],
             "translationInd": "Permisi, boleh saya duduk di sini?",
             "noteInd": "harfiahnya \"permisi, (tempat) ini, boleh?\". Ini ungkapan baku untuk meminta izin memakai kursi yang kosong."
           }
@@ -369,7 +1272,20 @@
         "sentences": [
           {
             "id": "L001.variation.02.1",
-            "ja": [{ "t": "はい" }, { "t": "、" }, { "t": "どうぞ" }, { "t": "。" }],
+            "ja": [
+              {
+                "t": "はい"
+              },
+              {
+                "t": "、"
+              },
+              {
+                "t": "どうぞ"
+              },
+              {
+                "t": "。"
+              }
+            ],
             "translationInd": "Ya, silakan."
           }
         ]
@@ -379,28 +1295,101 @@
         "sentences": [
           {
             "id": "L001.variation.03.1",
-            "ja": [{ "t": "ありがとう" }, { "t": "ございます", "lemma": "ござる", "lemmaR": "ござる", "form": "masu", "aux": true }, { "t": "。" }],
+            "ja": [
+              {
+                "t": "ありがとう"
+              },
+              {
+                "t": "ございます",
+                "lemma": "ござる",
+                "lemmaR": "ござる",
+                "form": "masu",
+                "aux": true
+              },
+              {
+                "t": "。"
+              }
+            ],
             "translationInd": "Terima kasih.",
             "noteInd": "Kim berterima kasih atas izin yang baru saja diberikan, dan percakapannya masih berlanjut, jadi dipakai ございます. Bandingkan dengan ございました di dialog utama 5.2, yang menutup giliran Rina."
           },
           {
             "id": "L001.variation.03.2",
-            "ja": [{ "t": "はじめまして" }, { "t": "。" }],
+            "ja": [
+              {
+                "t": "はじめまして"
+              },
+              {
+                "t": "。"
+              }
+            ],
             "translationInd": "Perkenalkan."
           },
           {
             "id": "L001.variation.03.3",
-            "ja": [{ "t": "キム", "proper": true }, { "t": "です" }, { "t": "。" }],
+            "ja": [
+              {
+                "t": "キム",
+                "proper": true
+              },
+              {
+                "t": "です"
+              },
+              {
+                "t": "。"
+              }
+            ],
             "translationInd": "Saya Kim."
           },
           {
             "id": "L001.variation.03.4",
-            "ja": [{ "t": "韓国", "r": "かんこく", "proper": true }, { "t": "から", "prt": true }, { "t": "来ました", "r": "きました", "lemma": "来る", "lemmaR": "くる", "form": "mashita" }, { "t": "。" }],
+            "ja": [
+              {
+                "t": "韓国",
+                "r": "かんこく",
+                "proper": true
+              },
+              {
+                "t": "から",
+                "prt": true
+              },
+              {
+                "t": "来ました",
+                "r": "きました",
+                "lemma": "来る",
+                "lemmaR": "くる",
+                "form": "mashita"
+              },
+              {
+                "t": "。"
+              }
+            ],
             "translationInd": "Saya dari Korea Selatan."
           },
           {
             "id": "L001.variation.03.5",
-            "ja": [{ "t": "どうぞ" }, { "t": "よろしく" }, { "t": "お願い", "r": "おねがい" }, { "t": "します", "lemma": "する", "lemmaR": "する", "form": "masu", "aux": true }, { "t": "。" }],
+            "ja": [
+              {
+                "t": "どうぞ"
+              },
+              {
+                "t": "よろしく"
+              },
+              {
+                "t": "お願い",
+                "r": "おねがい"
+              },
+              {
+                "t": "します",
+                "lemma": "する",
+                "lemmaR": "する",
+                "form": "masu",
+                "aux": true
+              },
+              {
+                "t": "。"
+              }
+            ],
             "translationInd": "Salam kenal."
           }
         ]
@@ -410,22 +1399,87 @@
         "sentences": [
           {
             "id": "L001.variation.04.1",
-            "ja": [{ "t": "はじめまして" }, { "t": "。" }],
+            "ja": [
+              {
+                "t": "はじめまして"
+              },
+              {
+                "t": "。"
+              }
+            ],
             "translationInd": "Perkenalkan."
           },
           {
             "id": "L001.variation.04.2",
-            "ja": [{ "t": "リナ", "proper": true }, { "t": "です" }, { "t": "。" }],
+            "ja": [
+              {
+                "t": "リナ",
+                "proper": true
+              },
+              {
+                "t": "です"
+              },
+              {
+                "t": "。"
+              }
+            ],
             "translationInd": "Saya Rina."
           },
           {
             "id": "L001.variation.04.3",
-            "ja": [{ "t": "インドネシア", "proper": true }, { "t": "から", "prt": true }, { "t": "来ました", "r": "きました", "lemma": "来る", "lemmaR": "くる", "form": "mashita" }, { "t": "。" }],
+            "ja": [
+              {
+                "t": "インドネシア",
+                "proper": true
+              },
+              {
+                "t": "から",
+                "prt": true
+              },
+              {
+                "t": "来ました",
+                "r": "きました",
+                "lemma": "来る",
+                "lemmaR": "くる",
+                "form": "mashita"
+              },
+              {
+                "t": "。"
+              }
+            ],
             "translationInd": "Saya dari Indonesia."
           },
           {
             "id": "L001.variation.04.4",
-            "ja": [{ "t": "こちら" }, { "t": "こそ", "prt": true }, { "t": "、" }, { "t": "よろしく" }, { "t": "お願い", "r": "おねがい" }, { "t": "します", "lemma": "する", "lemmaR": "する", "form": "masu", "aux": true }, { "t": "。" }],
+            "ja": [
+              {
+                "t": "こちら"
+              },
+              {
+                "t": "こそ",
+                "prt": true
+              },
+              {
+                "t": "、"
+              },
+              {
+                "t": "よろしく"
+              },
+              {
+                "t": "お願い",
+                "r": "おねがい"
+              },
+              {
+                "t": "します",
+                "lemma": "する",
+                "lemmaR": "する",
+                "form": "masu",
+                "aux": true
+              },
+              {
+                "t": "。"
+              }
+            ],
             "translationInd": "Salam kenal juga."
           }
         ]
@@ -435,7 +1489,55 @@
         "sentences": [
           {
             "id": "L001.variation.05.1",
-            "ja": [{ "t": "リナ", "proper": true }, { "t": "さん", "suffix": true }, { "t": "は", "prt": true }, { "t": "、" }, { "t": "今", "r": "いま" }, { "t": "どこ" }, { "t": "に", "prt": true }, { "t": "住んで", "r": "すんで", "lemma": "住む", "lemmaR": "すむ", "form": "te" }, { "t": "います", "lemma": "いる", "lemmaR": "いる", "form": "masu", "aux": true }, { "t": "か", "prt": true }, { "t": "？" }],
+            "ja": [
+              {
+                "t": "リナ",
+                "proper": true
+              },
+              {
+                "t": "さん",
+                "suffix": true
+              },
+              {
+                "t": "は",
+                "prt": true
+              },
+              {
+                "t": "、"
+              },
+              {
+                "t": "今",
+                "r": "いま"
+              },
+              {
+                "t": "どこ"
+              },
+              {
+                "t": "に",
+                "prt": true
+              },
+              {
+                "t": "住んで",
+                "r": "すんで",
+                "lemma": "住む",
+                "lemmaR": "すむ",
+                "form": "te"
+              },
+              {
+                "t": "います",
+                "lemma": "いる",
+                "lemmaR": "いる",
+                "form": "masu",
+                "aux": true
+              },
+              {
+                "t": "か",
+                "prt": true
+              },
+              {
+                "t": "？"
+              }
+            ],
             "translationInd": "Rina sekarang tinggal di mana?"
           }
         ]
@@ -445,13 +1547,41 @@
         "sentences": [
           {
             "id": "L001.variation.06.1",
-            "ja": [{ "t": "新宿", "r": "しんじゅく", "proper": true }, { "t": "です" }, { "t": "。" }],
+            "ja": [
+              {
+                "t": "新宿",
+                "r": "しんじゅく",
+                "proper": true
+              },
+              {
+                "t": "です"
+              },
+              {
+                "t": "。"
+              }
+            ],
             "translationInd": "Di Shinjuku.",
             "noteInd": "sama seperti 11.1 di dialog utama, \"[tempat]です\" sudah cukup untuk menjawab pertanyaan tempat tinggal."
           },
           {
             "id": "L001.variation.06.2",
-            "ja": [{ "t": "キム", "proper": true }, { "t": "さん", "suffix": true }, { "t": "は", "prt": true }, { "t": "？" }],
+            "ja": [
+              {
+                "t": "キム",
+                "proper": true
+              },
+              {
+                "t": "さん",
+                "suffix": true
+              },
+              {
+                "t": "は",
+                "prt": true
+              },
+              {
+                "t": "？"
+              }
+            ],
             "translationInd": "Kalau Kim?",
             "noteInd": "kalimatnya sengaja dipotong. Maksud lengkapnya 「キムさんは(どこに住んでいますか)？」. Cara bertanya balik ini sangat umum."
           }
@@ -462,12 +1592,79 @@
         "sentences": [
           {
             "id": "L001.variation.07.1",
-            "ja": [{ "t": "わたし" }, { "t": "は", "prt": true }, { "t": "池袋", "r": "いけぶくろ", "proper": true }, { "t": "に", "prt": true }, { "t": "住んで", "r": "すんで", "lemma": "住む", "lemmaR": "すむ", "form": "te" }, { "t": "います", "lemma": "いる", "lemmaR": "いる", "form": "masu", "aux": true }, { "t": "。" }],
+            "ja": [
+              {
+                "t": "わたし"
+              },
+              {
+                "t": "は",
+                "prt": true
+              },
+              {
+                "t": "池袋",
+                "r": "いけぶくろ",
+                "proper": true
+              },
+              {
+                "t": "に",
+                "prt": true
+              },
+              {
+                "t": "住んで",
+                "r": "すんで",
+                "lemma": "住む",
+                "lemmaR": "すむ",
+                "form": "te"
+              },
+              {
+                "t": "います",
+                "lemma": "いる",
+                "lemmaR": "いる",
+                "form": "masu",
+                "aux": true
+              },
+              {
+                "t": "。"
+              }
+            ],
             "translationInd": "Saya tinggal di Ikebukuro."
           },
           {
             "id": "L001.variation.07.2",
-            "ja": [{ "t": "近く", "r": "ちかく" }, { "t": "の", "prt": true }, { "t": "レストラン" }, { "t": "で", "prt": true }, { "t": "働いて", "r": "はたらいて", "lemma": "働く", "lemmaR": "はたらく", "form": "te" }, { "t": "います", "lemma": "いる", "lemmaR": "いる", "form": "masu", "aux": true }, { "t": "。" }],
+            "ja": [
+              {
+                "t": "近く",
+                "r": "ちかく"
+              },
+              {
+                "t": "の",
+                "prt": true
+              },
+              {
+                "t": "レストラン"
+              },
+              {
+                "t": "で",
+                "prt": true
+              },
+              {
+                "t": "働いて",
+                "r": "はたらいて",
+                "lemma": "働く",
+                "lemmaR": "はたらく",
+                "form": "te"
+              },
+              {
+                "t": "います",
+                "lemma": "いる",
+                "lemmaR": "いる",
+                "form": "masu",
+                "aux": true
+              },
+              {
+                "t": "。"
+              }
+            ],
             "translationInd": "Saya bekerja di restoran di dekat sana.",
             "noteInd": "近くの berarti \"yang di dekat (situ)\". Di sini maksudnya dekat Ikebukuro, tempat tinggalnya."
           }
@@ -478,12 +1675,55 @@
         "sentences": [
           {
             "id": "L001.variation.08.1",
-            "ja": [{ "t": "そう" }, { "t": "です" }, { "t": "か", "prt": true }, { "t": "。" }],
+            "ja": [
+              {
+                "t": "そう"
+              },
+              {
+                "t": "です"
+              },
+              {
+                "t": "か",
+                "prt": true
+              },
+              {
+                "t": "。"
+              }
+            ],
             "translationInd": "Oh, begitu."
           },
           {
             "id": "L001.variation.08.2",
-            "ja": [{ "t": "あ" }, { "t": "、" }, { "t": "先生", "r": "せんせい" }, { "t": "が", "prt": true }, { "t": "来ました", "r": "きました", "lemma": "来る", "lemmaR": "くる", "form": "mashita" }, { "t": "よ", "prt": true }, { "t": "。" }],
+            "ja": [
+              {
+                "t": "あ"
+              },
+              {
+                "t": "、"
+              },
+              {
+                "t": "先生",
+                "r": "せんせい"
+              },
+              {
+                "t": "が",
+                "prt": true
+              },
+              {
+                "t": "来ました",
+                "r": "きました",
+                "lemma": "来る",
+                "lemmaR": "くる",
+                "form": "mashita"
+              },
+              {
+                "t": "よ",
+                "prt": true
+              },
+              {
+                "t": "。"
+              }
+            ],
             "translationInd": "Oh, gurunya sudah datang.",
             "noteInd": "di sini 来ました berarti benar-benar \"(baru saja) datang\", bukan \"berasal dari\". が menandai pelaku yang baru disadari, dan よ dipakai untuk memberi tahu lawan bicara."
           }
@@ -501,7 +1741,28 @@
       "meaningInd": "semuanya, kalian semua",
       "posInd": "kata ganti",
       "example": {
-        "ja": [{ "t": "みなさん" }, { "t": "、" }, { "t": "元気", "r": "げんき" }, { "t": "です" }, { "t": "か", "prt": true }, { "t": "？" }],
+        "ja": [
+          {
+            "t": "みなさん"
+          },
+          {
+            "t": "、"
+          },
+          {
+            "t": "元気",
+            "r": "げんき"
+          },
+          {
+            "t": "です"
+          },
+          {
+            "t": "か",
+            "prt": true
+          },
+          {
+            "t": "？"
+          }
+        ],
         "translationInd": "Semuanya, apa kabar?"
       }
     },
@@ -514,7 +1775,25 @@
       "meaningInd": "saya",
       "posInd": "kata ganti",
       "example": {
-        "ja": [{ "t": "わたし" }, { "t": "は", "prt": true }, { "t": "学生", "r": "がくせい" }, { "t": "です" }, { "t": "。" }],
+        "ja": [
+          {
+            "t": "わたし"
+          },
+          {
+            "t": "は",
+            "prt": true
+          },
+          {
+            "t": "学生",
+            "r": "がくせい"
+          },
+          {
+            "t": "です"
+          },
+          {
+            "t": "。"
+          }
+        ],
         "translationInd": "Saya pelajar."
       }
     },
@@ -527,7 +1806,44 @@
       "meaningInd": "perkenalan diri",
       "posInd": "nomina (bisa + する)",
       "example": {
-        "ja": [{ "t": "明日", "r": "あした" }, { "t": "、" }, { "t": "会社", "r": "かいしゃ" }, { "t": "で", "prt": true }, { "t": "自己", "r": "じこ" }, { "t": "紹介", "r": "しょうかい" }, { "t": "を", "prt": true }, { "t": "します", "lemma": "する", "lemmaR": "する", "form": "masu" }, { "t": "。" }],
+        "ja": [
+          {
+            "t": "明日",
+            "r": "あした"
+          },
+          {
+            "t": "、"
+          },
+          {
+            "t": "会社",
+            "r": "かいしゃ"
+          },
+          {
+            "t": "で",
+            "prt": true
+          },
+          {
+            "t": "自己",
+            "r": "じこ"
+          },
+          {
+            "t": "紹介",
+            "r": "しょうかい"
+          },
+          {
+            "t": "を",
+            "prt": true
+          },
+          {
+            "t": "します",
+            "lemma": "する",
+            "lemmaR": "する",
+            "form": "masu"
+          },
+          {
+            "t": "。"
+          }
+        ],
         "translationInd": "Besok saya memperkenalkan diri di kantor."
       }
     },
@@ -540,7 +1856,28 @@
       "meaningInd": "silakan",
       "posInd": "adverbia",
       "example": {
-        "ja": [{ "t": "どうぞ" }, { "t": "、" }, { "t": "入って", "r": "はいって" }, { "t": "ください", "lemma": "くださる", "lemmaR": "くださる", "form": "request", "aux": true }, { "t": "。" }],
+        "ja": [
+          {
+            "t": "どうぞ"
+          },
+          {
+            "t": "、"
+          },
+          {
+            "t": "入って",
+            "r": "はいって"
+          },
+          {
+            "t": "ください",
+            "lemma": "くださる",
+            "lemmaR": "くださる",
+            "form": "request",
+            "aux": true
+          },
+          {
+            "t": "。"
+          }
+        ],
         "translationInd": "Silakan masuk."
       }
     },
@@ -553,7 +1890,20 @@
       "meaningInd": "ya, baik",
       "posInd": "interjeksi",
       "example": {
-        "ja": [{ "t": "はい" }, { "t": "、" }, { "t": "わかりました" }, { "t": "。" }],
+        "ja": [
+          {
+            "t": "はい"
+          },
+          {
+            "t": "、"
+          },
+          {
+            "t": "わかりました"
+          },
+          {
+            "t": "。"
+          }
+        ],
         "translationInd": "Baik, saya mengerti."
       }
     },
@@ -566,7 +1916,49 @@
       "meaningInd": "bukan, tidak",
       "posInd": "interjeksi",
       "example": {
-        "ja": [{ "t": "「" }, { "t": "コーヒー" }, { "t": "です" }, { "t": "か", "prt": true }, { "t": "？" }, { "t": "」" }, { "t": "「" }, { "t": "いいえ" }, { "t": "、" }, { "t": "紅茶", "r": "こうちゃ" }, { "t": "です" }, { "t": "。" }, { "t": "」" }],
+        "ja": [
+          {
+            "t": "「"
+          },
+          {
+            "t": "コーヒー"
+          },
+          {
+            "t": "です"
+          },
+          {
+            "t": "か",
+            "prt": true
+          },
+          {
+            "t": "？"
+          },
+          {
+            "t": "」"
+          },
+          {
+            "t": "「"
+          },
+          {
+            "t": "いいえ"
+          },
+          {
+            "t": "、"
+          },
+          {
+            "t": "紅茶",
+            "r": "こうちゃ"
+          },
+          {
+            "t": "です"
+          },
+          {
+            "t": "。"
+          },
+          {
+            "t": "」"
+          }
+        ],
         "translationInd": "\"Ini kopi?\" \"Bukan, teh.\""
       }
     },
@@ -579,7 +1971,54 @@
       "meaningInd": "begitu (dalam そうです \"betul\", そうですか \"oh, begitu\")",
       "posInd": "adverbia",
       "example": {
-        "ja": [{ "t": "「" }, { "t": "山田", "r": "やまだ", "proper": true }, { "t": "さん", "suffix": true }, { "t": "です" }, { "t": "か", "prt": true }, { "t": "？" }, { "t": "」" }, { "t": "「" }, { "t": "はい" }, { "t": "、" }, { "t": "そう" }, { "t": "です" }, { "t": "。" }, { "t": "」" }],
+        "ja": [
+          {
+            "t": "「"
+          },
+          {
+            "t": "山田",
+            "r": "やまだ",
+            "proper": true
+          },
+          {
+            "t": "さん",
+            "suffix": true
+          },
+          {
+            "t": "です"
+          },
+          {
+            "t": "か",
+            "prt": true
+          },
+          {
+            "t": "？"
+          },
+          {
+            "t": "」"
+          },
+          {
+            "t": "「"
+          },
+          {
+            "t": "はい"
+          },
+          {
+            "t": "、"
+          },
+          {
+            "t": "そう"
+          },
+          {
+            "t": "です"
+          },
+          {
+            "t": "。"
+          },
+          {
+            "t": "」"
+          }
+        ],
         "translationInd": "\"Benar ini Yamada?\" \"Ya, betul.\""
       }
     },
@@ -592,7 +2031,28 @@
       "meaningInd": "mana",
       "posInd": "kata tanya",
       "example": {
-        "ja": [{ "t": "トイレ" }, { "t": "は", "prt": true }, { "t": "どこ" }, { "t": "です" }, { "t": "か", "prt": true }, { "t": "？" }],
+        "ja": [
+          {
+            "t": "トイレ"
+          },
+          {
+            "t": "は",
+            "prt": true
+          },
+          {
+            "t": "どこ"
+          },
+          {
+            "t": "です"
+          },
+          {
+            "t": "か",
+            "prt": true
+          },
+          {
+            "t": "？"
+          }
+        ],
         "translationInd": "Toiletnya di mana?"
       }
     },
@@ -605,7 +2065,29 @@
       "meaningInd": "sekarang",
       "posInd": "nomina (keterangan waktu)",
       "example": {
-        "ja": [{ "t": "今", "r": "いま" }, { "t": "、" }, { "t": "何時", "r": "なんじ" }, { "t": "です" }, { "t": "か", "prt": true }, { "t": "？" }],
+        "ja": [
+          {
+            "t": "今",
+            "r": "いま"
+          },
+          {
+            "t": "、"
+          },
+          {
+            "t": "何時",
+            "r": "なんじ"
+          },
+          {
+            "t": "です"
+          },
+          {
+            "t": "か",
+            "prt": true
+          },
+          {
+            "t": "？"
+          }
+        ],
         "translationInd": "Sekarang jam berapa?"
       }
     },
@@ -618,7 +2100,35 @@
       "meaningInd": "berikutnya",
       "posInd": "nomina",
       "example": {
-        "ja": [{ "t": "次", "r": "つぎ" }, { "t": "の", "prt": true }, { "t": "駅", "r": "えき" }, { "t": "は", "prt": true }, { "t": "新宿", "r": "しんじゅく", "proper": true }, { "t": "です" }, { "t": "。" }],
+        "ja": [
+          {
+            "t": "次",
+            "r": "つぎ"
+          },
+          {
+            "t": "の",
+            "prt": true
+          },
+          {
+            "t": "駅",
+            "r": "えき"
+          },
+          {
+            "t": "は",
+            "prt": true
+          },
+          {
+            "t": "新宿",
+            "r": "しんじゅく",
+            "proper": true
+          },
+          {
+            "t": "です"
+          },
+          {
+            "t": "。"
+          }
+        ],
         "translationInd": "Stasiun berikutnya Shinjuku."
       }
     },
@@ -631,7 +2141,26 @@
       "meaningInd": "mahasiswa",
       "posInd": "nomina",
       "example": {
-        "ja": [{ "t": "兄", "r": "あに" }, { "t": "は", "prt": true }, { "t": "大学生", "r": "だいがくせい" }, { "t": "です" }, { "t": "。" }],
+        "ja": [
+          {
+            "t": "兄",
+            "r": "あに"
+          },
+          {
+            "t": "は",
+            "prt": true
+          },
+          {
+            "t": "大学生",
+            "r": "だいがくせい"
+          },
+          {
+            "t": "です"
+          },
+          {
+            "t": "。"
+          }
+        ],
         "translationInd": "Kakak laki-laki saya mahasiswa."
       }
     },
@@ -644,7 +2173,26 @@
       "meaningInd": "karyawan perusahaan",
       "posInd": "nomina",
       "example": {
-        "ja": [{ "t": "父", "r": "ちち" }, { "t": "は", "prt": true }, { "t": "会社員", "r": "かいしゃいん" }, { "t": "です" }, { "t": "。" }],
+        "ja": [
+          {
+            "t": "父",
+            "r": "ちち"
+          },
+          {
+            "t": "は",
+            "prt": true
+          },
+          {
+            "t": "会社員",
+            "r": "かいしゃいん"
+          },
+          {
+            "t": "です"
+          },
+          {
+            "t": "。"
+          }
+        ],
         "translationInd": "Ayah saya karyawan perusahaan."
       }
     },
@@ -657,7 +2205,34 @@
       "meaningInd": "perusahaan, kantor",
       "posInd": "nomina",
       "example": {
-        "ja": [{ "t": "会社", "r": "かいしゃ" }, { "t": "は", "prt": true }, { "t": "駅", "r": "えき" }, { "t": "の", "prt": true }, { "t": "近く", "r": "ちかく" }, { "t": "です" }, { "t": "。" }],
+        "ja": [
+          {
+            "t": "会社",
+            "r": "かいしゃ"
+          },
+          {
+            "t": "は",
+            "prt": true
+          },
+          {
+            "t": "駅",
+            "r": "えき"
+          },
+          {
+            "t": "の",
+            "prt": true
+          },
+          {
+            "t": "近く",
+            "r": "ちかく"
+          },
+          {
+            "t": "です"
+          },
+          {
+            "t": "。"
+          }
+        ],
         "translationInd": "Kantor saya dekat stasiun."
       }
     },
@@ -670,7 +2245,30 @@
       "meaningInd": "hari ini",
       "posInd": "nomina (keterangan waktu)",
       "example": {
-        "ja": [{ "t": "今日", "r": "きょう" }, { "t": "は", "prt": true }, { "t": "暑い", "r": "あつい" }, { "t": "です" }, { "t": "ね", "prt": true }, { "t": "。" }],
+        "ja": [
+          {
+            "t": "今日",
+            "r": "きょう"
+          },
+          {
+            "t": "は",
+            "prt": true
+          },
+          {
+            "t": "暑い",
+            "r": "あつい"
+          },
+          {
+            "t": "です"
+          },
+          {
+            "t": "ね",
+            "prt": true
+          },
+          {
+            "t": "。"
+          }
+        ],
         "translationInd": "Hari ini panas, ya."
       }
     },
@@ -683,7 +2281,23 @@
       "meaningInd": "bersama-sama",
       "posInd": "adverbia",
       "example": {
-        "ja": [{ "t": "一緒", "r": "いっしょ" }, { "t": "に", "prt": true }, { "t": "帰りましょう", "r": "かえりましょう" }, { "t": "。" }],
+        "ja": [
+          {
+            "t": "一緒",
+            "r": "いっしょ"
+          },
+          {
+            "t": "に",
+            "prt": true
+          },
+          {
+            "t": "帰りましょう",
+            "r": "かえりましょう"
+          },
+          {
+            "t": "。"
+          }
+        ],
         "translationInd": "Ayo pulang bersama."
       }
     },
@@ -696,7 +2310,31 @@
       "meaningInd": "bahasa Jepang",
       "posInd": "nomina",
       "example": {
-        "ja": [{ "t": "日本語", "r": "にほんご", "proper": true }, { "t": "は", "prt": true }, { "t": "難しい", "r": "むずかしい" }, { "t": "です" }, { "t": "か", "prt": true }, { "t": "？" }],
+        "ja": [
+          {
+            "t": "日本語",
+            "r": "にほんご",
+            "proper": true
+          },
+          {
+            "t": "は",
+            "prt": true
+          },
+          {
+            "t": "難しい",
+            "r": "むずかしい"
+          },
+          {
+            "t": "です"
+          },
+          {
+            "t": "か",
+            "prt": true
+          },
+          {
+            "t": "？"
+          }
+        ],
         "translationInd": "Apakah bahasa Jepang sulit?"
       }
     }
@@ -780,7 +2418,26 @@
         }
       ],
       "newExample": {
-        "ja": [{ "t": "わたし" }, { "t": "は", "prt": true }, { "t": "インドネシア人", "r": "いんどねしあじん", "proper": true }, { "t": "です" }, { "t": "。" }],
+        "ja": [
+          {
+            "t": "わたし"
+          },
+          {
+            "t": "は",
+            "prt": true
+          },
+          {
+            "t": "インドネシア人",
+            "r": "いんどねしあじん",
+            "proper": true
+          },
+          {
+            "t": "です"
+          },
+          {
+            "t": "。"
+          }
+        ],
         "translationInd": "Saya orang Indonesia."
       }
     },
@@ -801,7 +2458,62 @@
         }
       ],
       "newExample": {
-        "ja": [{ "t": "「" }, { "t": "マリア", "proper": true }, { "t": "さん", "suffix": true }, { "t": "は", "prt": true }, { "t": "フィリピン人", "r": "ふぃりぴんじん", "proper": true }, { "t": "です" }, { "t": "か", "prt": true }, { "t": "？" }, { "t": "」" }, { "t": "「" }, { "t": "はい" }, { "t": "、" }, { "t": "そう" }, { "t": "です" }, { "t": "。" }, { "t": "」" }],
+        "ja": [
+          {
+            "t": "「"
+          },
+          {
+            "t": "マリア",
+            "proper": true
+          },
+          {
+            "t": "さん",
+            "suffix": true
+          },
+          {
+            "t": "は",
+            "prt": true
+          },
+          {
+            "t": "フィリピン人",
+            "r": "ふぃりぴんじん",
+            "proper": true
+          },
+          {
+            "t": "です"
+          },
+          {
+            "t": "か",
+            "prt": true
+          },
+          {
+            "t": "？"
+          },
+          {
+            "t": "」"
+          },
+          {
+            "t": "「"
+          },
+          {
+            "t": "はい"
+          },
+          {
+            "t": "、"
+          },
+          {
+            "t": "そう"
+          },
+          {
+            "t": "です"
+          },
+          {
+            "t": "。"
+          },
+          {
+            "t": "」"
+          }
+        ],
         "translationInd": "\"Apakah Maria orang Filipina?\" \"Ya, betul.\""
       }
     },
@@ -826,7 +2538,33 @@
         }
       ],
       "newExample": {
-        "ja": [{ "t": "わたし" }, { "t": "は", "prt": true }, { "t": "スラバヤ", "proper": true }, { "t": "から", "prt": true }, { "t": "来ました", "r": "きました", "lemma": "来る", "lemmaR": "くる", "form": "mashita" }, { "t": "。" }],
+        "ja": [
+          {
+            "t": "わたし"
+          },
+          {
+            "t": "は",
+            "prt": true
+          },
+          {
+            "t": "スラバヤ",
+            "proper": true
+          },
+          {
+            "t": "から",
+            "prt": true
+          },
+          {
+            "t": "来ました",
+            "r": "きました",
+            "lemma": "来る",
+            "lemmaR": "くる",
+            "form": "mashita"
+          },
+          {
+            "t": "。"
+          }
+        ],
         "translationInd": "Saya dari Surabaya."
       }
     },
@@ -847,7 +2585,42 @@
         }
       ],
       "newExample": {
-        "ja": [{ "t": "姉", "r": "あね" }, { "t": "は", "prt": true }, { "t": "大阪", "r": "おおさか", "proper": true }, { "t": "に", "prt": true }, { "t": "住んで", "r": "すんで", "lemma": "住む", "lemmaR": "すむ", "form": "te" }, { "t": "います", "lemma": "いる", "lemmaR": "いる", "form": "masu", "aux": true }, { "t": "。" }],
+        "ja": [
+          {
+            "t": "姉",
+            "r": "あね"
+          },
+          {
+            "t": "は",
+            "prt": true
+          },
+          {
+            "t": "大阪",
+            "r": "おおさか",
+            "proper": true
+          },
+          {
+            "t": "に",
+            "prt": true
+          },
+          {
+            "t": "住んで",
+            "r": "すんで",
+            "lemma": "住む",
+            "lemmaR": "すむ",
+            "form": "te"
+          },
+          {
+            "t": "います",
+            "lemma": "いる",
+            "lemmaR": "いる",
+            "form": "masu",
+            "aux": true
+          },
+          {
+            "t": "。"
+          }
+        ],
         "translationInd": "Kakak perempuan saya tinggal di Osaka."
       }
     },
@@ -872,7 +2645,54 @@
         }
       ],
       "newExample": {
-        "ja": [{ "t": "「" }, { "t": "わたし" }, { "t": "は", "prt": true }, { "t": "会社員", "r": "かいしゃいん" }, { "t": "です" }, { "t": "。" }, { "t": "」" }, { "t": "「" }, { "t": "わたし" }, { "t": "も", "prt": true }, { "t": "会社員", "r": "かいしゃいん" }, { "t": "です" }, { "t": "。" }, { "t": "」" }],
+        "ja": [
+          {
+            "t": "「"
+          },
+          {
+            "t": "わたし"
+          },
+          {
+            "t": "は",
+            "prt": true
+          },
+          {
+            "t": "会社員",
+            "r": "かいしゃいん"
+          },
+          {
+            "t": "です"
+          },
+          {
+            "t": "。"
+          },
+          {
+            "t": "」"
+          },
+          {
+            "t": "「"
+          },
+          {
+            "t": "わたし"
+          },
+          {
+            "t": "も",
+            "prt": true
+          },
+          {
+            "t": "会社員",
+            "r": "かいしゃいん"
+          },
+          {
+            "t": "です"
+          },
+          {
+            "t": "。"
+          },
+          {
+            "t": "」"
+          }
+        ],
         "translationInd": "\"Saya karyawan perusahaan.\" \"Saya juga karyawan perusahaan.\""
       }
     }
@@ -880,97 +2700,398 @@
   "expressions": [
     {
       "id": "hajimemashite",
-      "ja": [{ "t": "はじめまして" }],
+      "ja": [
+        {
+          "t": "はじめまして"
+        }
+      ],
       "meaningInd": "\"Perkenalkan\". Harfiahnya \"(ini) pertama kalinya (kita bertemu)\".",
       "contextInd": "Diucapkan sekali, di awal pertemuan pertama, sebelum menyebut nama. Di dialog: 1.2, 2.1, 6.1, 10.1.",
       "politenessInd": "Netral. Bisa dipakai kepada guru, atasan, maupun teman sebaya.",
       "situationInd": "Hari pertama di kelas atau kantor, bertemu tetangga baru, dikenalkan kepada teman dari teman. Tidak dipakai kepada orang yang sudah pernah ditemui.",
       "comparison": {
         "formal": [
-          [{ "t": "はじめまして" }, { "t": "。" }]
+          [
+            {
+              "t": "はじめまして"
+            },
+            {
+              "t": "。"
+            }
+          ]
         ],
         "casual": [
-          [{ "t": "はじめまして" }, { "t": "。" }]
+          [
+            {
+              "t": "はじめまして"
+            },
+            {
+              "t": "。"
+            }
+          ]
         ],
         "noteInd": "Tidak ada bentuk kasual khusus. Ungkapan ini sudah netral, jadi teman sebaya pun memakainya apa adanya. Dalam suasana santai, orang kadang langsung menyebut nama tanpa はじめまして."
       }
     },
     {
       "id": "yoroshiku-onegai-shimasu",
-      "ja": [{ "t": "どうぞ" }, { "t": "よろしく" }, { "t": "お願い", "r": "おねがい" }, { "t": "します", "lemma": "する", "lemmaR": "する", "form": "masu", "aux": true }],
+      "ja": [
+        {
+          "t": "どうぞ"
+        },
+        {
+          "t": "よろしく"
+        },
+        {
+          "t": "お願い",
+          "r": "おねがい"
+        },
+        {
+          "t": "します",
+          "lemma": "する",
+          "lemmaR": "する",
+          "form": "masu",
+          "aux": true
+        }
+      ],
       "meaningInd": "\"Salam kenal\" saat pertama bertemu. Dari murid kepada guru, juga bernuansa \"mohon bimbingannya\". Harfiahnya kira-kira \"silakan, mohon perlakukan (saya) dengan baik\".",
       "contextInd": "Diucapkan di akhir perkenalan diri, setelah nama dan asal. Di dialog: 1.4, 2.5, 6.4, 10.5. Bentuk tanpa どうぞ: 3.1, 7.1, 12.2, 13.1.",
       "politenessInd": "どうぞよろしくお願いします lebih sopan; よろしくお願いします sedikit lebih ringan tetapi tetap sopan. Keduanya teineigo.",
       "situationInd": "Penutup perkenalan diri, awal kerja sama, atau saat meminta bantuan kepada seseorang ke depannya.",
       "comparison": {
         "formal": [
-          [{ "t": "どうぞ" }, { "t": "よろしく" }, { "t": "お願い", "r": "おねがい" }, { "t": "します", "lemma": "する", "lemmaR": "する", "form": "masu", "aux": true }, { "t": "。" }],
-          [{ "t": "よろしく" }, { "t": "お願い", "r": "おねがい" }, { "t": "します", "lemma": "する", "lemmaR": "する", "form": "masu", "aux": true }, { "t": "。" }]
+          [
+            {
+              "t": "どうぞ"
+            },
+            {
+              "t": "よろしく"
+            },
+            {
+              "t": "お願い",
+              "r": "おねがい"
+            },
+            {
+              "t": "します",
+              "lemma": "する",
+              "lemmaR": "する",
+              "form": "masu",
+              "aux": true
+            },
+            {
+              "t": "。"
+            }
+          ],
+          [
+            {
+              "t": "よろしく"
+            },
+            {
+              "t": "お願い",
+              "r": "おねがい"
+            },
+            {
+              "t": "します",
+              "lemma": "する",
+              "lemmaR": "する",
+              "form": "masu",
+              "aux": true
+            },
+            {
+              "t": "。"
+            }
+          ]
         ],
         "casual": [
-          [{ "t": "よろしく" }, { "t": "。" }],
-          [{ "t": "よろしく" }, { "t": "ね", "prt": true }, { "t": "。" }]
+          [
+            {
+              "t": "よろしく"
+            },
+            {
+              "t": "。"
+            }
+          ],
+          [
+            {
+              "t": "よろしく"
+            },
+            {
+              "t": "ね",
+              "prt": true
+            },
+            {
+              "t": "。"
+            }
+          ]
         ],
         "noteInd": "よろしく saja terdengar singkat dan lugas. よろしくね lebih ramah karena ada ね. Keduanya hanya untuk teman sebaya atau orang yang lebih muda, bukan untuk guru.\n\nPerhatikan: お願いします tanpa よろしく punya makna lain, yaitu \"tolong\" atau \"silakan\". Contohnya 5.3, saat guru meminta Chen mulai berbicara.\n\nUngkapan ini biasa ditulis dengan kana (よろしく), bukan kanji."
       },
       "alternatives": [
         {
-          "ja": [{ "t": "よろしく" }, { "t": "お願い", "r": "おねがい" }, { "t": "いたします", "lemma": "いたす", "lemmaR": "いたす", "form": "masu", "aux": true }],
+          "ja": [
+            {
+              "t": "よろしく"
+            },
+            {
+              "t": "お願い",
+              "r": "おねがい"
+            },
+            {
+              "t": "いたします",
+              "lemma": "いたす",
+              "lemmaR": "いたす",
+              "form": "masu",
+              "aux": true
+            }
+          ],
           "noteInd": "Bentuk alternatif yang benar. Ini lebih sopan karena memakai いたします (bentuk merendah dari します). Biasa dipakai di surel dan situasi kerja. Bentuk ini di atas level N5, jadi cukup dikenali saja."
         }
       ]
     },
     {
       "id": "kochira-koso",
-      "ja": [{ "t": "こちら" }, { "t": "こそ", "prt": true }],
+      "ja": [
+        {
+          "t": "こちら"
+        },
+        {
+          "t": "こそ",
+          "prt": true
+        }
+      ],
       "meaningInd": "\"Saya juga\" atau \"justru saya yang (berterima kasih / mohon bantuan)\". Harfiahnya \"justru pihak sini (yang seharusnya berkata begitu)\". Bukan padanan \"sama-sama\" sebagai balasan terima kasih; untuk itu dipakai どういたしまして.",
       "contextInd": "Membalas よろしくお願いします atau ucapan terima kasih. Di dialog: 13.1, saat Rina membalas Maria.",
       "politenessInd": "こちらこそ sendiri netral. Tingkat sopannya ditentukan oleh kata sesudahnya.",
       "situationInd": "Ketika lawan bicara berkata よろしくお願いします lebih dulu, atau berterima kasih atas sesuatu yang juga kita syukuri.",
       "comparison": {
         "formal": [
-          [{ "t": "こちら" }, { "t": "こそ", "prt": true }, { "t": "、" }, { "t": "よろしく" }, { "t": "お願い", "r": "おねがい" }, { "t": "します", "lemma": "する", "lemmaR": "する", "form": "masu", "aux": true }, { "t": "。" }],
-          [{ "t": "こちら" }, { "t": "こそ", "prt": true }, { "t": "、" }, { "t": "ありがとう" }, { "t": "ございました", "lemma": "ござる", "lemmaR": "ござる", "form": "mashita", "aux": true }, { "t": "。" }]
+          [
+            {
+              "t": "こちら"
+            },
+            {
+              "t": "こそ",
+              "prt": true
+            },
+            {
+              "t": "、"
+            },
+            {
+              "t": "よろしく"
+            },
+            {
+              "t": "お願い",
+              "r": "おねがい"
+            },
+            {
+              "t": "します",
+              "lemma": "する",
+              "lemmaR": "する",
+              "form": "masu",
+              "aux": true
+            },
+            {
+              "t": "。"
+            }
+          ],
+          [
+            {
+              "t": "こちら"
+            },
+            {
+              "t": "こそ",
+              "prt": true
+            },
+            {
+              "t": "、"
+            },
+            {
+              "t": "ありがとう"
+            },
+            {
+              "t": "ございました",
+              "lemma": "ござる",
+              "lemmaR": "ござる",
+              "form": "mashita",
+              "aux": true
+            },
+            {
+              "t": "。"
+            }
+          ]
         ],
         "casual": [
-          [{ "t": "こちら" }, { "t": "こそ", "prt": true }, { "t": "、" }, { "t": "よろしく" }, { "t": "（" }, { "t": "ね", "prt": true }, { "t": "）" }, { "t": "。" }],
-          [{ "t": "こちら" }, { "t": "こそ", "prt": true }, { "t": "、" }, { "t": "ありがとう" }, { "t": "。" }]
+          [
+            {
+              "t": "こちら"
+            },
+            {
+              "t": "こそ",
+              "prt": true
+            },
+            {
+              "t": "、"
+            },
+            {
+              "t": "よろしく"
+            },
+            {
+              "t": "（"
+            },
+            {
+              "t": "ね",
+              "prt": true
+            },
+            {
+              "t": "）"
+            },
+            {
+              "t": "。"
+            }
+          ],
+          [
+            {
+              "t": "こちら"
+            },
+            {
+              "t": "こそ",
+              "prt": true
+            },
+            {
+              "t": "、"
+            },
+            {
+              "t": "ありがとう"
+            },
+            {
+              "t": "。"
+            }
+          ]
         ],
         "noteInd": "こちらこそ tidak punya bentuk kasual sendiri. Yang berubah hanya bagian sesudahnya."
       }
     },
     {
       "id": "sou-desu-ka",
-      "ja": [{ "t": "そう" }, { "t": "です" }, { "t": "か", "prt": true }],
+      "ja": [
+        {
+          "t": "そう"
+        },
+        {
+          "t": "です"
+        },
+        {
+          "t": "か",
+          "prt": true
+        }
+      ],
       "meaningInd": "\"Oh, begitu\". Menunjukkan bahwa kita mendengar dan menerima informasi baru.",
       "contextInd": "Tanggapan setelah lawan bicara memberi informasi. Di dialog: 9.1, setelah Chen menjelaskan pekerjaannya. Pola yang sama muncul di 5.1 (ジャカルタですか。).",
       "politenessInd": "Sopan (です).",
       "situationInd": "Hampir semua percakapan sopan. Diucapkan dengan intonasi turun. Dengan intonasi naik (そうですか？), maknanya berubah menjadi \"oh ya? masa?\".",
       "comparison": {
         "formal": [
-          [{ "t": "そう" }, { "t": "です" }, { "t": "か", "prt": true }, { "t": "。" }]
+          [
+            {
+              "t": "そう"
+            },
+            {
+              "t": "です"
+            },
+            {
+              "t": "か",
+              "prt": true
+            },
+            {
+              "t": "。"
+            }
+          ]
         ],
         "casual": [
-          [{ "t": "そう" }, { "t": "か", "prt": true }, { "t": "。" }],
-          [{ "t": "そっか" }, { "t": "。" }]
+          [
+            {
+              "t": "そう"
+            },
+            {
+              "t": "か",
+              "prt": true
+            },
+            {
+              "t": "。"
+            }
+          ],
+          [
+            {
+              "t": "そっか"
+            },
+            {
+              "t": "。"
+            }
+          ]
         ],
         "noteInd": "Jangan tertukar dengan そうです (\"betul\", 12.1), yang dipakai untuk membenarkan.\n\nPenutur asli juga sering berkata そうなんですか. Bentuk ini memakai の/ん yang belum dibahas di materi ini."
       }
     },
     {
       "id": "arigatou-gozaimashita",
-      "ja": [{ "t": "ありがとう" }, { "t": "ございました", "lemma": "ござる", "lemmaR": "ござる", "form": "mashita", "aux": true }],
+      "ja": [
+        {
+          "t": "ありがとう"
+        },
+        {
+          "t": "ございました",
+          "lemma": "ござる",
+          "lemmaR": "ござる",
+          "form": "mashita",
+          "aux": true
+        }
+      ],
       "meaningInd": "\"Terima kasih\" untuk sesuatu yang sudah selesai.",
       "contextInd": "Guru berterima kasih setelah perkenalan Rina selesai (5.2) dan setelah semua murid selesai (14.1).",
       "politenessInd": "Sopan.",
       "situationInd": "Penutup untuk kegiatan yang sudah selesai sepenuhnya, misalnya akhir pelajaran atau keluar dari toko. ありがとうございます adalah bentuk umum, termasuk tepat setelah menerima bantuan atau barang bila situasinya masih berlanjut.",
       "comparison": {
         "formal": [
-          [{ "t": "ありがとう" }, { "t": "ございました", "lemma": "ござる", "lemmaR": "ござる", "form": "mashita", "aux": true }, { "t": "。" }],
-          [{ "t": "ありがとう" }, { "t": "ございます", "lemma": "ござる", "lemmaR": "ござる", "form": "masu", "aux": true }, { "t": "。" }]
+          [
+            {
+              "t": "ありがとう"
+            },
+            {
+              "t": "ございました",
+              "lemma": "ござる",
+              "lemmaR": "ござる",
+              "form": "mashita",
+              "aux": true
+            },
+            {
+              "t": "。"
+            }
+          ],
+          [
+            {
+              "t": "ありがとう"
+            },
+            {
+              "t": "ございます",
+              "lemma": "ござる",
+              "lemmaR": "ござる",
+              "form": "masu",
+              "aux": true
+            },
+            {
+              "t": "。"
+            }
+          ]
         ],
         "casual": [
-          [{ "t": "ありがとう" }, { "t": "。" }]
+          [
+            {
+              "t": "ありがとう"
+            },
+            {
+              "t": "。"
+            }
+          ]
         ],
         "noteInd": "ありがとう dipakai kepada teman dan keluarga. Bentuk kasual tidak membedakan lampau dan sekarang.\n\nどうも adalah ucapan terima kasih singkat yang agak santai. Ini bukan padanan kasual yang persis, karena orang dewasa juga memakainya, misalnya kepada pegawai toko. Kepada guru lebih baik memakai bentuk lengkap."
       }
@@ -983,21 +3104,88 @@
         "id": "L001.quiz.q1",
         "type": "comprehension",
         "prompt": {
-          "ja": [{ "t": "リナ", "proper": true }, { "t": "さん", "suffix": true }, { "t": "は", "prt": true }, { "t": "、" }, { "t": "インドネシア", "proper": true }, { "t": "の", "prt": true }, { "t": "どこ" }, { "t": "から", "prt": true }, { "t": "来ました", "r": "きました", "lemma": "来る", "lemmaR": "くる", "form": "mashita" }, { "t": "か", "prt": true }, { "t": "？" }],
+          "ja": [
+            {
+              "t": "リナ",
+              "proper": true
+            },
+            {
+              "t": "さん",
+              "suffix": true
+            },
+            {
+              "t": "は",
+              "prt": true
+            },
+            {
+              "t": "、"
+            },
+            {
+              "t": "インドネシア",
+              "proper": true
+            },
+            {
+              "t": "の",
+              "prt": true
+            },
+            {
+              "t": "どこ"
+            },
+            {
+              "t": "から",
+              "prt": true
+            },
+            {
+              "t": "来ました",
+              "r": "きました",
+              "lemma": "来る",
+              "lemmaR": "くる",
+              "form": "mashita"
+            },
+            {
+              "t": "か",
+              "prt": true
+            },
+            {
+              "t": "？"
+            }
+          ],
           "translationInd": "Rina berasal dari daerah mana di Indonesia?"
         },
         "options": [
           {
-            "ja": [{ "t": "ジャカルタ", "proper": true }]
+            "ja": [
+              {
+                "t": "ジャカルタ",
+                "proper": true
+              }
+            ]
           },
           {
-            "ja": [{ "t": "スラバヤ", "proper": true }]
+            "ja": [
+              {
+                "t": "スラバヤ",
+                "proper": true
+              }
+            ]
           },
           {
-            "ja": [{ "t": "新宿", "r": "しんじゅく", "proper": true }]
+            "ja": [
+              {
+                "t": "新宿",
+                "r": "しんじゅく",
+                "proper": true
+              }
+            ]
           },
           {
-            "ja": [{ "t": "東京", "r": "とうきょう", "proper": true }]
+            "ja": [
+              {
+                "t": "東京",
+                "r": "とうきょう",
+                "proper": true
+              }
+            ]
           }
         ],
         "answer": {
@@ -1009,7 +3197,12 @@
         "id": "L001.quiz.q2",
         "type": "vocabulary",
         "prompt": {
-          "ja": [{ "t": "会社員", "r": "かいしゃいん" }],
+          "ja": [
+            {
+              "t": "会社員",
+              "r": "かいしゃいん"
+            }
+          ],
           "textInd": "Apa arti 会社員 (kaishain)?"
         },
         "options": [
@@ -1035,21 +3228,80 @@
         "id": "L001.quiz.q3",
         "type": "completion",
         "prompt": {
-          "ja": [{ "t": "わたし" }, { "t": "（" }, { "t": "　" }, { "t": "）" }, { "t": "新宿", "r": "しんじゅく", "proper": true }, { "t": "に", "prt": true }, { "t": "住んで", "r": "すんで", "lemma": "住む", "lemmaR": "すむ", "form": "te" }, { "t": "います", "lemma": "いる", "lemmaR": "いる", "form": "masu", "aux": true }, { "t": "。" }],
+          "ja": [
+            {
+              "t": "わたし"
+            },
+            {
+              "t": "（"
+            },
+            {
+              "t": "　"
+            },
+            {
+              "t": "）"
+            },
+            {
+              "t": "新宿",
+              "r": "しんじゅく",
+              "proper": true
+            },
+            {
+              "t": "に",
+              "prt": true
+            },
+            {
+              "t": "住んで",
+              "r": "すんで",
+              "lemma": "住む",
+              "lemmaR": "すむ",
+              "form": "te"
+            },
+            {
+              "t": "います",
+              "lemma": "いる",
+              "lemmaR": "いる",
+              "form": "masu",
+              "aux": true
+            },
+            {
+              "t": "。"
+            }
+          ],
           "textInd": "Rina berkata 「今、新宿に住んでいます。」 (Ima, Shinjuku ni sunde imasu.). Maria ingin mengatakan bahwa ia juga tinggal di Shinjuku. Pilih partikel yang tepat."
         },
         "options": [
           {
-            "ja": [{ "t": "は", "prt": true }]
+            "ja": [
+              {
+                "t": "は",
+                "prt": true
+              }
+            ]
           },
           {
-            "ja": [{ "t": "も", "prt": true }]
+            "ja": [
+              {
+                "t": "も",
+                "prt": true
+              }
+            ]
           },
           {
-            "ja": [{ "t": "を", "prt": true }]
+            "ja": [
+              {
+                "t": "を",
+                "prt": true
+              }
+            ]
           },
           {
-            "ja": [{ "t": "で", "prt": true }]
+            "ja": [
+              {
+                "t": "で",
+                "prt": true
+              }
+            ]
           }
         ],
         "answer": {
@@ -1061,21 +3313,140 @@
         "id": "L001.quiz.q4",
         "type": "comprehension",
         "prompt": {
-          "ja": [{ "t": "チェン", "proper": true }, { "t": "さん", "suffix": true }, { "t": "は", "prt": true }, { "t": "、" }, { "t": "今", "r": "いま" }, { "t": "どこ" }, { "t": "で", "prt": true }, { "t": "働いて", "r": "はたらいて", "lemma": "働く", "lemmaR": "はたらく", "form": "te" }, { "t": "います", "lemma": "いる", "lemmaR": "いる", "form": "masu", "aux": true }, { "t": "か", "prt": true }, { "t": "？" }],
+          "ja": [
+            {
+              "t": "チェン",
+              "proper": true
+            },
+            {
+              "t": "さん",
+              "suffix": true
+            },
+            {
+              "t": "は",
+              "prt": true
+            },
+            {
+              "t": "、"
+            },
+            {
+              "t": "今",
+              "r": "いま"
+            },
+            {
+              "t": "どこ"
+            },
+            {
+              "t": "で",
+              "prt": true
+            },
+            {
+              "t": "働いて",
+              "r": "はたらいて",
+              "lemma": "働く",
+              "lemmaR": "はたらく",
+              "form": "te"
+            },
+            {
+              "t": "います",
+              "lemma": "いる",
+              "lemmaR": "いる",
+              "form": "masu",
+              "aux": true
+            },
+            {
+              "t": "か",
+              "prt": true
+            },
+            {
+              "t": "？"
+            }
+          ],
           "translationInd": "Di mana Chen bekerja sekarang?"
         },
         "options": [
           {
-            "ja": [{ "t": "台湾", "r": "たいわん", "proper": true }, { "t": "の", "prt": true }, { "t": "会社", "r": "かいしゃ" }, { "t": "です" }, { "t": "。" }]
+            "ja": [
+              {
+                "t": "台湾",
+                "r": "たいわん",
+                "proper": true
+              },
+              {
+                "t": "の",
+                "prt": true
+              },
+              {
+                "t": "会社",
+                "r": "かいしゃ"
+              },
+              {
+                "t": "です"
+              },
+              {
+                "t": "。"
+              }
+            ]
           },
           {
-            "ja": [{ "t": "東京", "r": "とうきょう", "proper": true }, { "t": "の", "prt": true }, { "t": "会社", "r": "かいしゃ" }, { "t": "です" }, { "t": "。" }]
+            "ja": [
+              {
+                "t": "東京",
+                "r": "とうきょう",
+                "proper": true
+              },
+              {
+                "t": "の",
+                "prt": true
+              },
+              {
+                "t": "会社",
+                "r": "かいしゃ"
+              },
+              {
+                "t": "です"
+              },
+              {
+                "t": "。"
+              }
+            ]
           },
           {
-            "ja": [{ "t": "大学", "r": "だいがく" }, { "t": "です" }, { "t": "。" }]
+            "ja": [
+              {
+                "t": "大学",
+                "r": "だいがく"
+              },
+              {
+                "t": "です"
+              },
+              {
+                "t": "。"
+              }
+            ]
           },
           {
-            "ja": [{ "t": "日本語", "r": "にほんご", "proper": true }, { "t": "の", "prt": true }, { "t": "学校", "r": "がっこう" }, { "t": "です" }, { "t": "。" }]
+            "ja": [
+              {
+                "t": "日本語",
+                "r": "にほんご",
+                "proper": true
+              },
+              {
+                "t": "の",
+                "prt": true
+              },
+              {
+                "t": "学校",
+                "r": "がっこう"
+              },
+              {
+                "t": "です"
+              },
+              {
+                "t": "。"
+              }
+            ]
           }
         ],
         "answer": {
@@ -1087,7 +3458,15 @@
         "id": "L001.quiz.q5",
         "type": "conjugation",
         "prompt": {
-          "ja": [{ "t": "来る", "r": "くる", "lemma": "来る", "lemmaR": "くる", "form": "dict" }],
+          "ja": [
+            {
+              "t": "来る",
+              "r": "くる",
+              "lemma": "来る",
+              "lemmaR": "くる",
+              "form": "dict"
+            }
+          ],
           "textInd": "Ubah 来る (kuru, \"datang\") ke bentuk て. Tulis jawaban dalam kana."
         },
         "verb": {
@@ -1121,19 +3500,137 @@
         "patternInd": "「[nama]です。[negara]から来ました。」",
         "items": [
           {
-            "ja": [{ "t": "キム", "proper": true }, { "t": "です" }, { "t": "。" }, { "t": "韓国", "r": "かんこく", "proper": true }, { "t": "から", "prt": true }, { "t": "来ました", "r": "きました", "lemma": "来る", "lemmaR": "くる", "form": "mashita" }, { "t": "。" }],
+            "ja": [
+              {
+                "t": "キム",
+                "proper": true
+              },
+              {
+                "t": "です"
+              },
+              {
+                "t": "。"
+              },
+              {
+                "t": "韓国",
+                "r": "かんこく",
+                "proper": true
+              },
+              {
+                "t": "から",
+                "prt": true
+              },
+              {
+                "t": "来ました",
+                "r": "きました",
+                "lemma": "来る",
+                "lemmaR": "くる",
+                "form": "mashita"
+              },
+              {
+                "t": "。"
+              }
+            ],
             "translationInd": "Saya Kim. Saya dari Korea Selatan."
           },
           {
-            "ja": [{ "t": "ワン", "proper": true }, { "t": "です" }, { "t": "。" }, { "t": "中国", "r": "ちゅうごく", "proper": true }, { "t": "から", "prt": true }, { "t": "来ました", "r": "きました", "lemma": "来る", "lemmaR": "くる", "form": "mashita" }, { "t": "。" }],
+            "ja": [
+              {
+                "t": "ワン",
+                "proper": true
+              },
+              {
+                "t": "です"
+              },
+              {
+                "t": "。"
+              },
+              {
+                "t": "中国",
+                "r": "ちゅうごく",
+                "proper": true
+              },
+              {
+                "t": "から",
+                "prt": true
+              },
+              {
+                "t": "来ました",
+                "r": "きました",
+                "lemma": "来る",
+                "lemmaR": "くる",
+                "form": "mashita"
+              },
+              {
+                "t": "。"
+              }
+            ],
             "translationInd": "Saya Wang. Saya dari Tiongkok."
           },
           {
-            "ja": [{ "t": "トム", "proper": true }, { "t": "です" }, { "t": "。" }, { "t": "アメリカ", "proper": true }, { "t": "から", "prt": true }, { "t": "来ました", "r": "きました", "lemma": "来る", "lemmaR": "くる", "form": "mashita" }, { "t": "。" }],
+            "ja": [
+              {
+                "t": "トム",
+                "proper": true
+              },
+              {
+                "t": "です"
+              },
+              {
+                "t": "。"
+              },
+              {
+                "t": "アメリカ",
+                "proper": true
+              },
+              {
+                "t": "から",
+                "prt": true
+              },
+              {
+                "t": "来ました",
+                "r": "きました",
+                "lemma": "来る",
+                "lemmaR": "くる",
+                "form": "mashita"
+              },
+              {
+                "t": "。"
+              }
+            ],
             "translationInd": "Saya Tom. Saya dari Amerika."
           },
           {
-            "ja": [{ "t": "アン", "proper": true }, { "t": "です" }, { "t": "。" }, { "t": "ベトナム", "proper": true }, { "t": "から", "prt": true }, { "t": "来ました", "r": "きました", "lemma": "来る", "lemmaR": "くる", "form": "mashita" }, { "t": "。" }],
+            "ja": [
+              {
+                "t": "アン",
+                "proper": true
+              },
+              {
+                "t": "です"
+              },
+              {
+                "t": "。"
+              },
+              {
+                "t": "ベトナム",
+                "proper": true
+              },
+              {
+                "t": "から",
+                "prt": true
+              },
+              {
+                "t": "来ました",
+                "r": "きました",
+                "lemma": "来る",
+                "lemmaR": "くる",
+                "form": "mashita"
+              },
+              {
+                "t": "。"
+              }
+            ],
             "translationInd": "Saya Anh. Saya dari Vietnam."
           }
         ]
@@ -1142,19 +3639,155 @@
         "patternInd": "「今、[tempat]に住んでいます。」",
         "items": [
           {
-            "ja": [{ "t": "今", "r": "いま" }, { "t": "、" }, { "t": "渋谷", "r": "しぶや", "proper": true }, { "t": "に", "prt": true }, { "t": "住んで", "r": "すんで", "lemma": "住む", "lemmaR": "すむ", "form": "te" }, { "t": "います", "lemma": "いる", "lemmaR": "いる", "form": "masu", "aux": true }, { "t": "。" }],
+            "ja": [
+              {
+                "t": "今",
+                "r": "いま"
+              },
+              {
+                "t": "、"
+              },
+              {
+                "t": "渋谷",
+                "r": "しぶや",
+                "proper": true
+              },
+              {
+                "t": "に",
+                "prt": true
+              },
+              {
+                "t": "住んで",
+                "r": "すんで",
+                "lemma": "住む",
+                "lemmaR": "すむ",
+                "form": "te"
+              },
+              {
+                "t": "います",
+                "lemma": "いる",
+                "lemmaR": "いる",
+                "form": "masu",
+                "aux": true
+              },
+              {
+                "t": "。"
+              }
+            ],
             "translationInd": "Sekarang saya tinggal di Shibuya."
           },
           {
-            "ja": [{ "t": "今", "r": "いま" }, { "t": "、" }, { "t": "池袋", "r": "いけぶくろ", "proper": true }, { "t": "に", "prt": true }, { "t": "住んで", "r": "すんで", "lemma": "住む", "lemmaR": "すむ", "form": "te" }, { "t": "います", "lemma": "いる", "lemmaR": "いる", "form": "masu", "aux": true }, { "t": "。" }],
+            "ja": [
+              {
+                "t": "今",
+                "r": "いま"
+              },
+              {
+                "t": "、"
+              },
+              {
+                "t": "池袋",
+                "r": "いけぶくろ",
+                "proper": true
+              },
+              {
+                "t": "に",
+                "prt": true
+              },
+              {
+                "t": "住んで",
+                "r": "すんで",
+                "lemma": "住む",
+                "lemmaR": "すむ",
+                "form": "te"
+              },
+              {
+                "t": "います",
+                "lemma": "いる",
+                "lemmaR": "いる",
+                "form": "masu",
+                "aux": true
+              },
+              {
+                "t": "。"
+              }
+            ],
             "translationInd": "Sekarang saya tinggal di Ikebukuro."
           },
           {
-            "ja": [{ "t": "今", "r": "いま" }, { "t": "、" }, { "t": "上野", "r": "うえの", "proper": true }, { "t": "に", "prt": true }, { "t": "住んで", "r": "すんで", "lemma": "住む", "lemmaR": "すむ", "form": "te" }, { "t": "います", "lemma": "いる", "lemmaR": "いる", "form": "masu", "aux": true }, { "t": "。" }],
+            "ja": [
+              {
+                "t": "今",
+                "r": "いま"
+              },
+              {
+                "t": "、"
+              },
+              {
+                "t": "上野",
+                "r": "うえの",
+                "proper": true
+              },
+              {
+                "t": "に",
+                "prt": true
+              },
+              {
+                "t": "住んで",
+                "r": "すんで",
+                "lemma": "住む",
+                "lemmaR": "すむ",
+                "form": "te"
+              },
+              {
+                "t": "います",
+                "lemma": "いる",
+                "lemmaR": "いる",
+                "form": "masu",
+                "aux": true
+              },
+              {
+                "t": "。"
+              }
+            ],
             "translationInd": "Sekarang saya tinggal di Ueno."
           },
           {
-            "ja": [{ "t": "今", "r": "いま" }, { "t": "、" }, { "t": "横浜", "r": "よこはま", "proper": true }, { "t": "に", "prt": true }, { "t": "住んで", "r": "すんで", "lemma": "住む", "lemmaR": "すむ", "form": "te" }, { "t": "います", "lemma": "いる", "lemmaR": "いる", "form": "masu", "aux": true }, { "t": "。" }],
+            "ja": [
+              {
+                "t": "今",
+                "r": "いま"
+              },
+              {
+                "t": "、"
+              },
+              {
+                "t": "横浜",
+                "r": "よこはま",
+                "proper": true
+              },
+              {
+                "t": "に",
+                "prt": true
+              },
+              {
+                "t": "住んで",
+                "r": "すんで",
+                "lemma": "住む",
+                "lemmaR": "すむ",
+                "form": "te"
+              },
+              {
+                "t": "います",
+                "lemma": "いる",
+                "lemmaR": "いる",
+                "form": "masu",
+                "aux": true
+              },
+              {
+                "t": "。"
+              }
+            ],
             "translationInd": "Sekarang saya tinggal di Yokohama."
           }
         ]
@@ -1163,19 +3796,86 @@
         "patternInd": "「いいえ、[pekerjaan]です。」 (jawaban untuk 「〜さんは大学生ですか？」)",
         "items": [
           {
-            "ja": [{ "t": "いいえ" }, { "t": "、" }, { "t": "エンジニア" }, { "t": "です" }, { "t": "。" }],
+            "ja": [
+              {
+                "t": "いいえ"
+              },
+              {
+                "t": "、"
+              },
+              {
+                "t": "エンジニア"
+              },
+              {
+                "t": "です"
+              },
+              {
+                "t": "。"
+              }
+            ],
             "translationInd": "Bukan, saya insinyur."
           },
           {
-            "ja": [{ "t": "いいえ" }, { "t": "、" }, { "t": "教師", "r": "きょうし" }, { "t": "です" }, { "t": "。" }],
+            "ja": [
+              {
+                "t": "いいえ"
+              },
+              {
+                "t": "、"
+              },
+              {
+                "t": "教師",
+                "r": "きょうし"
+              },
+              {
+                "t": "です"
+              },
+              {
+                "t": "。"
+              }
+            ],
             "translationInd": "Bukan, saya guru."
           },
           {
-            "ja": [{ "t": "いいえ" }, { "t": "、" }, { "t": "医者", "r": "いしゃ" }, { "t": "です" }, { "t": "。" }],
+            "ja": [
+              {
+                "t": "いいえ"
+              },
+              {
+                "t": "、"
+              },
+              {
+                "t": "医者",
+                "r": "いしゃ"
+              },
+              {
+                "t": "です"
+              },
+              {
+                "t": "。"
+              }
+            ],
             "translationInd": "Bukan, saya dokter."
           },
           {
-            "ja": [{ "t": "いいえ" }, { "t": "、" }, { "t": "銀行員", "r": "ぎんこういん" }, { "t": "です" }, { "t": "。" }],
+            "ja": [
+              {
+                "t": "いいえ"
+              },
+              {
+                "t": "、"
+              },
+              {
+                "t": "銀行員",
+                "r": "ぎんこういん"
+              },
+              {
+                "t": "です"
+              },
+              {
+                "t": "。"
+              }
+            ],
             "translationInd": "Bukan, saya pegawai bank."
           }
         ]
@@ -1184,57 +3884,116 @@
   },
   "glossary": [
     {
-      "word": [{ "t": "すみません" }],
+      "word": [
+        {
+          "t": "すみません"
+        }
+      ],
       "posInd": "ungkapan",
       "meaningInd": "permisi, maaf"
     },
     {
-      "word": [{ "t": "ここ" }],
+      "word": [
+        {
+          "t": "ここ"
+        }
+      ],
       "posInd": "kata tunjuk",
       "meaningInd": "sini, tempat ini"
     },
     {
-      "word": [{ "t": "いい" }],
+      "word": [
+        {
+          "t": "いい"
+        }
+      ],
       "posInd": "adjektiva-i",
       "meaningInd": "baik, boleh"
     },
     {
-      "word": [{ "t": "ありがとう" }, { "t": "ございます", "lemma": "ござる", "lemmaR": "ござる", "form": "masu", "aux": true }],
+      "word": [
+        {
+          "t": "ありがとう"
+        },
+        {
+          "t": "ございます",
+          "lemma": "ござる",
+          "lemmaR": "ござる",
+          "form": "masu",
+          "aux": true
+        }
+      ],
       "posInd": "ungkapan",
       "meaningInd": "terima kasih (bentuk umum)"
     },
     {
-      "word": [{ "t": "韓国", "r": "かんこく", "proper": true }],
+      "word": [
+        {
+          "t": "韓国",
+          "r": "かんこく",
+          "proper": true
+        }
+      ],
       "posInd": "nomina (nama negara)",
       "meaningInd": "Korea Selatan"
     },
     {
-      "word": [{ "t": "池袋", "r": "いけぶくろ", "proper": true }],
+      "word": [
+        {
+          "t": "池袋",
+          "r": "いけぶくろ",
+          "proper": true
+        }
+      ],
       "posInd": "nomina (nama tempat)",
       "meaningInd": "Ikebukuro, daerah di Tokyo"
     },
     {
-      "word": [{ "t": "近く", "r": "ちかく" }],
+      "word": [
+        {
+          "t": "近く",
+          "r": "ちかく"
+        }
+      ],
       "posInd": "nomina",
       "meaningInd": "dekat, sekitar"
     },
     {
-      "word": [{ "t": "レストラン" }],
+      "word": [
+        {
+          "t": "レストラン"
+        }
+      ],
       "posInd": "nomina",
       "meaningInd": "restoran"
     },
     {
-      "word": [{ "t": "先生", "r": "せんせい" }],
+      "word": [
+        {
+          "t": "先生",
+          "r": "せんせい"
+        }
+      ],
       "posInd": "nomina",
       "meaningInd": "guru"
     },
     {
-      "word": [{ "t": "が", "prt": true }],
+      "word": [
+        {
+          "t": "が",
+          "prt": true
+        }
+      ],
       "posInd": "partikel",
       "meaningInd": "partikel penanda subjek"
     },
     {
-      "word": [{ "t": "よ", "prt": true }],
+      "word": [
+        {
+          "t": "よ",
+          "prt": true
+        }
+      ],
       "posInd": "partikel",
       "meaningInd": "partikel akhir untuk memberi tahu"
     }

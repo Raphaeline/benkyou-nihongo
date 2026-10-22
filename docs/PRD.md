@@ -97,6 +97,7 @@ MVP berisi **1 materi lengkap** (Materi 1: Perkenalan Diri), login opsional deng
 | **D9** | **Satu project Supabase dulu** (`benkyou-staging`). Project produksi dibuat menjelang rilis (M6). Sampai saat itu `main` belum di-deploy ke produksi dengan database, agar konten staging yang belum direview tidak tercampur dengan konten produksi. | Pemilik, 22 Okt |
 | D10 | Domain `*.vercel.app` dulu | Rekomendasi disetujui |
 | D11 | Nama "Benkyō Nihongo" (dengan makron) di UI, `benkyou-nihongo` di repo dan URL. **Catatan:** susunan katanya sama dengan 「勉強日本語」, yang tidak alami bagi penutur Jepang. Nama ini dipertahankan sebagai nama merek. | Rekomendasi disetujui |
+| **D12** | **Staging hanya untuk fitur (kode), bukan konten.** Konten di-push langsung ke `main` tanpa PR, dan status review dihapus: semua materi di `main` terbit di produksi. Pengaman: workflow `deploy-production` menjalankan validasi → migrasi → seed → redeploy, sehingga konten yang gagal validasi tidak pernah ter-seed. Database staging cukup berisi konten contoh untuk menguji fitur. | Pemilik, 22 Okt |
 | A1 | **Asumsi anggaran Rp0:** Vercel Hobby, Supabase Free, GitHub Free. Konsekuensinya: tidak ada backup database, project bisa di-*pause* setelah 7 hari tidak aktif, dan layar login Google menampilkan domain `<ref>.supabase.co`. | Asumsi, mohon koreksi jika salah |
 
 ### 5.2 Belum diputuskan (tidak memblokir M0–M5)
@@ -329,30 +330,29 @@ Prinsip: **"pilih, jangan karang".** Draf AI hanya menyediakan teks, batas token
 
 ### 9.4 Alur penulisan, review, dan rilis
 
+Berlaku sejak keputusan D12 (22 Okt 2026). Staging hanya untuk fitur; konten langsung ke `main`.
+
 ```
-1. Draf      Claude menyusun JSON di branch content/L00X-...      status: ai-draft
-2. Validasi  validate:content, check:dictionary, test lolos (lokal + CI di PR)
-3. Staging   PR ke staging di-merge → migrate, seed, deploy staging otomatis
-4. Review    Pemilik membaca materi di situs staging dan mengisi checklist,
-             lalu PR kedua ke staging mengubah status menjadi reviewed
-5. Rilis     PR staging → main. Job release-gate di CI memastikan semua warning
-             pada materi berstatus reviewed sudah diakui.
-             Produksi hanya memuat materi berstatus reviewed.
+1. Draf      Claude menyusun JSON materi (dan draf Markdown untuk dibaca)
+2. Review    Pemilik membaca lewat npm run preview:draft atau npm run dev (lokal)
+3. Validasi  npm run validate:content dan npm test lolos di lokal
+4. Rilis     Commit dan push langsung ke main
+5. Produksi  deploy-production: validasi → migrasi → seed → redeploy Vercel
+             Jika validasi gagal, produksi tetap memakai konten lama
 ```
 
-- Materi `ai-draft` boleh ada di `main`, tetapi tidak dipublikasikan di produksi. Satu draf yang belum direview tidak memblokir rilis perbaikan lain.
-- Gerbang ini mencegah lupa, bukan membuktikan siapa yang mereview.
+- Tidak ada status review di data: semua materi di `main` terbit. Pemilik bertanggung jawab hanya mem-push materi yang sudah dibaca.
+- Materi yang membutuhkan fitur baru (tipe soal atau field baru) menunggu fitur itu lolos lewat `staging` dan masuk `main` lebih dulu.
 
-**Checklist review pemilik:**
+**Checklist pemilik sebelum push:**
 
-- [ ] Dialog dibaca utuh di staging; tidak ada yang terasa janggal atau kaku.
+- [ ] Dialog dibaca utuh; tidak ada yang terasa janggal atau kaku.
 - [ ] Tingkat kesopanan setiap tokoh sesuai catatan di bagian B.
-- [ ] Setiap warning kata berbacaan ganda sudah dicek di kamus (misalnya jisho.org) dan diakui.
+- [ ] Setiap warning kata berbacaan ganda sudah dicek di kamus (misalnya jisho.org).
 - [ ] Terjemahan Indonesia mudah dipahami, dan pilihan kamu/Anda konsisten.
-- [ ] Catatan terjemahan harfiah ada di kalimat yang membutuhkannya.
 - [ ] Penjelasan tata bahasa jelas dan tidak menyebut pola yang tidak ada di dialog.
 - [ ] Soal tidak punya lebih dari satu jawaban benar.
-- [ ] Kana, kanji, dan katakana dipakai sesuai kebiasaan; bentuk alternatif yang umum sudah dijelaskan.
+- [ ] `npm run validate:content` tanpa error.
 
 ### 9.5 Rencana Materi 1
 

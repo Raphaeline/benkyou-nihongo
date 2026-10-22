@@ -77,13 +77,6 @@ export const Lesson = z
     seq: z.number().int().positive(),
     slug: Id,
     level: z.enum(["N5", "N4"]),
-    review: z
-      .object({
-        status: z.enum(["ai-draft", "reviewed"]),
-        reviewedAt: z.string().nullable(),
-        checklist: z.array(z.object({ item: z.string(), done: z.boolean() }).strict()),
-      })
-      .strict(),
     meta: z
       .object({
         titleJa: Ja,
