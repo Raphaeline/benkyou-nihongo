@@ -2,7 +2,7 @@
 
 | | |
 |---|---|
-| Status | **Draft v0.1 — menunggu persetujuan** |
+| Status | **v1.0 — disetujui 22 Okt 2026 (semua rekomendasi §11)** |
 | Tanggal | 22 Oktober 2026 |
 | Pemilik produk | Zulfikhar |
 | Penyusun | Claude (Claude Code) |
