@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { StrokeOrder } from "./stroke-order";
 import { DAKUON, GOJUON, VOWELS, YOON, YOON_COLUMNS, type KanaCell, type KanaRow, type Script } from "@/lib/kana/data";
 
 const SCRIPT_LABEL: Record<Script, string> = { hiragana: "Hiragana", katakana: "Katakana" };
@@ -97,19 +98,23 @@ export function KanaChart() {
       </div>
 
       {selected && (
-        <div className="sticky top-0 z-10 mt-6 flex items-center gap-6 border-[3px] border-ink bg-white p-4" aria-live="polite">
-          <span lang="ja" className="font-ja text-7xl leading-none">
-            {selected.cell[script]}
-          </span>
+        <div className="sticky top-0 z-10 mt-6 flex flex-wrap items-start gap-6 border-[3px] border-ink bg-white p-4" aria-live="polite">
+          <div className="flex gap-2">
+            {[...selected.cell[script]].map((ch, i) => (
+              <StrokeOrder key={`${ch}-${i}`} char={ch} />
+            ))}
+          </div>
           <div>
-            <p className="font-ui text-2xl">{selected.cell.romaji}</p>
+            <p lang="ja" className="font-ja text-5xl leading-none">
+              {selected.cell[script]}
+            </p>
+            <p className="font-ui mt-2 text-2xl">{selected.cell.romaji}</p>
             <p className="text-base text-ink-2">
               {SCRIPT_LABEL[script === "hiragana" ? "katakana" : "hiragana"]}:{" "}
               <span lang="ja" className="font-ja">
                 {selected.cell[script === "hiragana" ? "katakana" : "hiragana"]}
               </span>
             </p>
-            <p className="font-ui mt-1 text-sm text-ink-3">Animasi urutan goresan menyusul.</p>
           </div>
           <button type="button" onClick={() => setSelected(null)} className="font-ui ml-auto underline underline-offset-4">
             Tutup

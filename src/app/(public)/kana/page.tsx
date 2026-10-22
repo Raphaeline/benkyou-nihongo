@@ -84,6 +84,18 @@ export default function KanaPage() {
           ))}
         </ul>
       </section>
+
+      <footer className="font-ui mt-12 border-t border-ink pt-4 text-sm text-ink-2">
+        Data urutan goresan dari{" "}
+        <a href="https://kanjivg.tagaini.net" className="underline underline-offset-4">
+          KanjiVG
+        </a>{" "}
+        © Ulrich Apel, dengan lisensi{" "}
+        <a href="https://creativecommons.org/licenses/by-sa/3.0/" className="underline underline-offset-4">
+          CC BY-SA 3.0
+        </a>
+        .
+      </footer>
     </article>
   );
 }
