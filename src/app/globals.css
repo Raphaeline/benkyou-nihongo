@@ -57,7 +57,7 @@
   /* Furigana: ruang selalu dicadangkan, toggle memakai visibility.
      Baris Jepang hanya putus di <wbr> (batas frasa dari renderer token, M4);
      auto-phrase dipakai bila browser mendukung, anywhere mencegah luber. */
-  :lang(ja) {
+  [lang="ja"] {
     line-height: 2.2;
     word-break: keep-all;
     word-break: auto-phrase;
@@ -73,6 +73,22 @@
 
   [data-furigana="off"] rt {
     visibility: hidden;
+  }
+
+  [data-romaji="off"] .romaji {
+    display: none;
+  }
+
+  .translation-reveal {
+    display: none;
+  }
+
+  [data-translation="off"] .translation:not([data-revealed]) .translation-text {
+    display: none;
+  }
+
+  [data-translation="off"] .translation:not([data-revealed]) .translation-reveal {
+    display: inline;
   }
 
   @media print {
