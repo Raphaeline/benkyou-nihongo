@@ -1,0 +1,46 @@
+name: ci
+
+on:
+  pull_request:
+    branches: [staging, main]
+  push:
+    branches: [staging, main]
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  ci:
+    name: ci
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm run lint
+      - run: npm run typecheck
+      - run: npm run build
+
+  # Gerbang rilis: PR ke main hanya boleh dari staging atau hotfix/*.
+  # Cek status review konten ditambahkan di M1 (lihat docs/PRD.md §9.4).
+  release-gate:
+    name: release-gate
+    if: github.event_name == 'pull_request' && github.base_ref == 'main'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Cek branch asal
+        env:
+          HEAD_REF: ${{ github.head_ref }}
+        run: |
+          if [ "$HEAD_REF" != "staging" ] && [[ "$HEAD_REF" != hotfix/* ]]; then
+            echo "::error::PR ke main harus berasal dari staging atau hotfix/*, bukan '$HEAD_REF'."
+            exit 1
+          fi
+          echo "Branch asal '$HEAD_REF' diizinkan."

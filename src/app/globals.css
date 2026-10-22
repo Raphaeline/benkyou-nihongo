@@ -1,0 +1,105 @@
+@import "tailwindcss";
+
+/*
+ * Design tokens — lihat docs/DESIGN_SYSTEM.md.
+ * Palet, radius, dan bayangan bawaan Tailwind sengaja direset supaya
+ * hanya token manga (kertas, tinta, tone) yang bisa dipakai.
+ */
+@theme {
+  --color-*: initial;
+  --color-paper: #f6f6f3;
+  --color-white: #ffffff;
+  --color-ink: #000000;
+  --color-ink-2: #3d3d3d;
+  --color-ink-3: #595959;
+  --color-tone-1: #e6e6e3;
+  --color-tone-2: #b3b3b3;
+  --color-tone-3: #808080;
+
+  --radius-*: initial;
+  --shadow-*: initial;
+  --inset-shadow-*: initial;
+  --drop-shadow-*: initial;
+  --text-shadow-*: initial;
+}
+
+@theme inline {
+  --font-*: initial;
+  --font-display: var(--font-dela-gothic-one), "Hiragino Sans", "Yu Gothic", sans-serif;
+  --font-ja: var(--font-shippori-antique), "Hiragino Sans", "Yu Gothic", "Noto Sans JP", sans-serif;
+  --font-body: var(--font-literata), Georgia, serif;
+  --font-ui: var(--font-atkinson-hyperlegible-next), system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    background: var(--color-paper);
+    color: var(--color-ink);
+  }
+
+  body {
+    font-family: var(--font-body);
+    font-size: 1.125rem;
+    line-height: 1.7;
+  }
+
+  /* Dela Gothic One dan Shippori Antique hanya punya satu ketebalan. */
+  .font-display,
+  .font-ja {
+    font-synthesis: none;
+  }
+
+  :focus-visible {
+    outline: 3px solid var(--color-ink);
+    outline-offset: 2px;
+  }
+
+  /* Furigana: ruang selalu dicadangkan, toggle memakai visibility.
+     Baris Jepang hanya putus di <wbr> (batas frasa dari renderer token, M4);
+     auto-phrase dipakai bila browser mendukung, anywhere mencegah luber. */
+  :lang(ja) {
+    line-height: 2.2;
+    word-break: keep-all;
+    word-break: auto-phrase;
+    overflow-wrap: anywhere;
+  }
+
+  rt {
+    font-size: 0.5em;
+    line-height: 1;
+    ruby-position: over;
+    user-select: none;
+  }
+
+  [data-furigana="off"] rt {
+    visibility: hidden;
+  }
+
+  @media print {
+    rt {
+      visibility: visible !important;
+    }
+  }
+}
+
+/*
+ * Screentone: titik hitam dengan kepadatan tetap (10%, 30%, 60%).
+ * Hanya untuk isian non-teks; teks tidak boleh diletakkan langsung di atasnya.
+ */
+@utility tone-10 {
+  background-image: radial-gradient(circle, var(--color-ink) 0 1.07px, transparent 1.2px);
+  background-size: 6px 6px;
+  print-color-adjust: exact;
+}
+
+@utility tone-30 {
+  background-image: radial-gradient(circle, var(--color-ink) 0 1.85px, transparent 2px);
+  background-size: 6px 6px;
+  print-color-adjust: exact;
+}
+
+@utility tone-60 {
+  background-image: radial-gradient(circle, var(--color-ink) 0 2.62px, transparent 2.75px);
+  background-size: 6px 6px;
+  print-color-adjust: exact;
+}
