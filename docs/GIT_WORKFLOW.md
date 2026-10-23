@@ -1,5 +1,8 @@
 # Alur Git
 
+> **Diperbarui 22 Okt 2026 (PRD D12):** konten (`content/**`) di-push langsung ke `main` tanpa PR. Perubahan kode tetap lewat `feature/*` → `staging` → `main`. Karena ruleset GitHub tidak bisa membedakan path, ruleset `main` **tidak** mewajibkan PR; aturan "kode lewat staging" dijalankan dengan disiplin, dan validasi konten dijaga oleh workflow `deploy-production`.
+
+
 Dokumen ini mengatur branch, pull request, ruleset GitHub, dan format commit untuk repo `benkyou-nihongo`. Keputusannya berasal dari [PRD.md](PRD.md) §12.1. Jika ada perbedaan, PRD yang berlaku.
 
 Istilah yang dipakai:

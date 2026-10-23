@@ -1,7 +1,6 @@
 // npm run seed:content — kirim semua materi valid ke Supabase lewat RPC seed_lesson.
 // Butuh NEXT_PUBLIC_SUPABASE_URL dan SUPABASE_SECRET_KEY (.env.local atau GitHub Environments).
-// --publish=all (bawaan, untuk staging) mempublikasikan semua materi;
-// --publish=reviewed (produksi) hanya materi berstatus reviewed.
+// Semua materi di repo dipublikasikan (konten di main = konten produksi).
 
 import { createHash } from "node:crypto";
 import { readdirSync, readFileSync } from "node:fs";
@@ -14,7 +13,6 @@ import { validateLesson } from "../src/lib/content/validate.ts";
 
 const URL_ = process.env.NEXT_PUBLIC_SUPABASE_URL;
 const KEY = process.env.SUPABASE_SECRET_KEY;
-const PUBLISH = process.argv.find((a) => a.startsWith("--publish="))?.split("=")[1] ?? "all";
 const DRY = process.argv.includes("--dry-run");
 if (!DRY && (!URL_ || !KEY)) {
   console.error("NEXT_PUBLIC_SUPABASE_URL dan SUPABASE_SECRET_KEY wajib diisi (lihat .env.example).");
@@ -24,7 +22,7 @@ if (!DRY && (!URL_ || !KEY)) {
 const TABLE_FORMS: Form[] = ["dict", "masu", "te", "mashita", "masen"];
 const ex = (e: { ja: Ja; translationInd: string }) => ({ ...derive(e.ja), tokens: e.ja, translation_ind: e.translationInd });
 
-export function buildPayload(lesson: Lesson, publish: boolean) {
+export function buildPayload(lesson: Lesson) {
   const content_hash = createHash("sha256").update(JSON.stringify(lesson)).digest("hex");
   const sentences: Record<string, unknown>[] = [];
   const turns: Record<string, unknown>[] = [];
@@ -83,7 +81,7 @@ export function buildPayload(lesson: Lesson, publish: boolean) {
       situation_ind: lesson.meta.situationInd, location_ind: lesson.meta.locationInd,
       objectives_ind: lesson.meta.objectivesInd, estimated_minutes: lesson.meta.estimatedMinutes,
       reading_guide: lesson.speaking.readingGuideInd, roleplay_guide_ind: lesson.speaking.roleplayInd.join("\n"),
-      review_status: lesson.review.status, published: publish, content_hash, updated_at: new Date().toISOString(),
+      published: true, content_hash, updated_at: new Date().toISOString(),
     },
     characters: lesson.characters.map((c, i) => ({
       lesson_id: lesson.id, id: c.id, seq: i + 1, name: { tokens: c.name, ...derive(c.name) }, name_romaji: romajiOf(c.name),
@@ -148,8 +146,7 @@ async function main() {
     const lesson = Lesson.parse(JSON.parse(readFileSync(join(dir, f), "utf8")));
     const errors = validateLesson(lesson).filter((i) => i.level === "error");
     if (errors.length) throw new Error(`${f}: ${errors.length} error validasi; jalankan npm run validate:content`);
-    const publish = PUBLISH === "all" || lesson.review.status === "reviewed";
-    const payload = buildPayload(lesson, publish);
+    const payload = buildPayload(lesson);
     if (DRY) {
       console.log(`${f}: payload ${JSON.stringify(payload).length} byte, ${payload.sentences.length} kalimat (dry run)`);
       continue;
@@ -162,7 +159,7 @@ async function main() {
     const body = await res.json();
     if (!res.ok) throw new Error(`${f}: HTTP ${res.status} ${JSON.stringify(body)}`);
     if (body !== payload.lesson.content_hash) throw new Error(`${f}: content_hash di database tidak sama dengan repo`);
-    console.log(`${f}: ${lesson.id} ter-seed (published=${publish}, hash ${body.slice(0, 12)}…)`);
+    console.log(`${f}: ${lesson.id} ter-seed (hash ${body.slice(0, 12)}…)`);
   }
 }
 
