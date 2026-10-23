@@ -26,7 +26,12 @@ jobs:
       - run: npm ci
       - run: npm run lint
       - run: npm run typecheck
+      # Halaman dibangun dari database (D1-A): build membaca project Supabase staging.
+      # Nilainya publik (publishable key dilindungi RLS), jadi disimpan sebagai repository variables.
       - run: npm run build
+        env:
+          NEXT_PUBLIC_SUPABASE_URL: ${{ vars.NEXT_PUBLIC_SUPABASE_URL }}
+          NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY: ${{ vars.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY }}
 
   # Gerbang rilis: PR ke main hanya boleh dari staging atau hotfix/*.
   # Cek status review konten ditambahkan di M1 (lihat docs/PRD.md §9.4).
